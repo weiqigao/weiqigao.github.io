@@ -1,0 +1,43 @@
+$ cd /opt/jboss-3.2.1_tomcat-4.1.24/server
+$ ls all/lib
+activation.jar                 jbossmq.jar
+ant.jar                        jbosssx.jar
+autonumber-plugin.jar          jboss-transaction.jar
+bcel.jar                       jcert.jar
+bsh-core-1.2b7.jar             jmx-adaptor-plugin.jar
+bsh-deployer.jar               jnet.jar
+hsqldb.jar                     jnpserver.jar
+hsqldb-plugin.jar              jpl-pattern.jar
+jacorb.jar                     jpl-util.jar
+javagroups-2.0.jar             jsse.jar
+javax.servlet.jar              jts.jar
+jboss-common-jdbc-wrapper.jar  log4j.jar
+jbossha.jar                    mail.jar
+jboss-iiop.jar                 mail-plugin.jar
+jboss-j2ee.jar                 properties-plugin.jar
+jboss-jaas.jar                 scheduler-plugin-example.jar
+jboss.jar                      scheduler-plugin.jar
+jboss-jsr77.jar                snmp-support.jar
+jboss-management.jar           tyrex.jar
+jbossmqha.jar                  xalan.jar
+$ ls default/lib
+activation.jar                 jboss-transaction.jar
+ant.jar                        jcert.jar
+autonumber-plugin.jar          jmx-adaptor-plugin.jar
+bcel.jar                       jnet.jar
+bsh-core-1.2b7.jar             jnpserver.jar
+bsh-deployer.jar               jpl-pattern.jar
+hsqldb.jar                     jpl-util.jar
+hsqldb-plugin.jar              jsse.jar
+javax.servlet.jar              jts.jar
+jboss-common-jdbc-wrapper.jar  log4j.jar
+jbossha.jar                    mail.jar
+jboss-j2ee.jar                 mail-plugin.jar
+jboss-jaas.jar                 properties-plugin.jar
+jboss.jar                      scheduler-plugin-example.jar
+jboss-jsr77.jar                scheduler-plugin.jar
+jboss-management.jar           snmp-support.jar
+jbossmq.jar                    tyrex.jar
+jbosssx.jar                    xalan.jar
+$ ls minimal/lib
+jboss-management.jar  jboss-minimal.jar  jnet.jar  jnpserver.jar  log4j.jar

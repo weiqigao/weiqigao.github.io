@@ -1,0 +1,78 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Example Applet (Cont’d)</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>Example Applet (Cont’d)</H1> 
+ <P><UL>
+<H2>    private void submit() {
+</H2>
+<BR></UL><UL>
+<H2>        Person person = new Person(nameFld.getText(),
+</H2>
+</UL><UL>
+<H2>                                   Integer.parseInt(ageFld.getText()));
+</H2>
+</UL><UL>
+<H2>        try {
+</H2>
+</UL><UL>
+<H2>            
+</H2>
+</UL><UL>
+<H2>            ObjectClient client = new ObjectClient(
+</H2>
+</UL><UL>
+<H2>                    "http://localhost:8080/servlet/MyServlet");
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>            person = (Person) client.write(person);
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>            nameFld.setText(person.getName());
+</H2>
+</UL><UL>
+<H2>            ageFld.setText("" + person.getAge());
+</H2>
+</UL><UL>
+<H2>        } catch (Exception ex) {
+</H2>
+</UL><UL>
+<H2>            ex.printStackTrace();
+</H2>
+</UL><UL>
+<H2>        }
+</H2>
+</UL><UL>
+<H2>    }
+</H2>
+</UL><UL>
+<H2>}</H2>
+</UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld033.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld035.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld034.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE head
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head xmlns="http://www.w3.org/1999/xhtml">
+   <title>Setup JBoss</title>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link rel="contents" href="toc.html" title="JBoss"/>
+   <link rel="top" href="titlepg.html" title="JBoss"/>
+   <link rel="up" href="titlepg.html" title="JBoss"/>
+   <link rel="previous" href="foil02.html" title="What Is JBoss?"/>
+   <link rel="next" href="foil04.html" title="JMX Console"/>
+   <script language="JavaScript1.2" type="text/javascript"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/ua.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/xbDOM.js"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/xbStyle.js"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/xbCollapsibleLists.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/slides.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/overlay.js"> </script>
+</head>
+<body xmlns="http://www.w3.org/1999/xhtml" class="foil" onload="newPage('foil03.html',1);" onkeypress="navigate(event)">
+   <div class="foil" id="setupjboss">
+      <a id="setupjboss"/>
+      <div class="navhead">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="Navigation table">
+            <tr>
+               <td align="left" valign="bottom" width="10%">
+                  <span class="link-text">
+                     <a href="foil02.html">
+                        <img alt="Prev" border="0" src="graphics/active/nav-prev.png"/>
+                     </a>
+                  </span> </td>
+               <td width="80%"> </td>
+               <td align="right" valign="bottom" width="10%">
+                  <span class="link-text">
+                     <a href="foil04.html">
+                        <img alt="Next" border="0" src="graphics/active/nav-next.png"/>
+                     </a>
+                  </span> </td>
+            </tr>
+         </table>
+         <hr class="top-nav-sep"/>
+      </div>
+      <h1 class="title">Setup JBoss</h1>
+      <p>The JBoss
+    project is hosted on <a href="http://sourceforge.net/projects/jboss" target="_top">Source
+    Forge</a>.</p>
+      <p>The <a href="http://sourceforge.net/project/showfiles.php?group_id=22866" target="_top">Files</a> section contains all JBoss releases since
+    2.2.</p>
+      <p>The files page contains sections named
+    <tt>JBoss</tt>, <tt>JBoss-Jetty</tt>,
+    <tt>JBoss-Tomcat</tt>.</p>
+      <p>For this talk we
+    will use
+    <tt>jboss-3.2.1_tomcat-4.1.24.zip</tt>.</p>
+      <p>Installation is easy:</p>
+      <pre class="screen">$ cd /opt
+$ unzip /download/jboss-3.2.1_tomcat-4.1.24.zip</pre>
+      <p>This creates the JBoss <a href="inspect-dirs.txt" target="_top">directory structure</a>.  The <tt>server</tt>
+    subdirectory houses the <tt>minimal</tt>,
+    <tt>default</tt>, and <tt>all</tt>
+    configuration sets.</p>
+      <p>To run a configuration set, say
+    <tt>all</tt>, simply do:</p>
+      <pre class="screen">$ cd /opt/jboss-3.2.1_tomcat-4.1.24/bin
+$ ./run.sh -c all</pre>
+      <div id="overlayDiv" style="position:absolute;visibility:visible;">
+         <div class="navfoot">
+            <hr class="bottom-nav-sep"/>
+            <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="Navigation table">
+               <tr>
+                  <td align="left" valign="top">
+                     <span class="copyright">Copyright © 2003 Weiqi Gao</span> </td>
+                  <td align="right" valign="top">
+                     <span class="link-text">
+                        <a href="foil02.html">
+                           <img alt="Prev" border="0" src="graphics/active/nav-prev.png"/>
+                        </a>
+                     </span> <span class="link-text">
+                        <a href="foil04.html">
+                           <img alt="Next" border="0" src="graphics/active/nav-next.png"/>
+                        </a>
+                     </span> </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </div>
+</body>

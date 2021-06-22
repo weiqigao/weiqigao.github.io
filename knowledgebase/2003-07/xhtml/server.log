@@ -1,0 +1,610 @@
+2003-07-06 08:50:16,733 INFO  [org.jboss.logging.Log4jService] Created
+2003-07-06 08:50:16,738 INFO  [org.jboss.web.WebService] Creating
+2003-07-06 08:50:16,741 INFO  [org.jboss.web.WebService] Created
+2003-07-06 08:50:16,742 INFO  [org.jboss.management.j2ee.LocalJBossServerDomain] Creating
+2003-07-06 08:50:16,797 INFO  [org.jboss.management.j2ee.LocalJBossServerDomain] Created
+2003-07-06 08:50:16,799 INFO  [org.jboss.naming.NamingService] Creating
+2003-07-06 08:50:16,799 INFO  [org.jboss.naming.NamingService] Created
+2003-07-06 08:50:16,854 INFO  [org.jboss.naming.JNDIView] Creating
+2003-07-06 08:50:16,855 INFO  [org.jboss.naming.JNDIView] Created
+2003-07-06 08:50:16,860 INFO  [org.jboss.security.plugins.SecurityConfig] Creating
+2003-07-06 08:50:16,860 INFO  [org.jboss.security.plugins.SecurityConfig] Created
+2003-07-06 08:50:16,861 INFO  [org.jboss.security.auth.login.XMLLoginConfig] Creating
+2003-07-06 08:50:16,861 INFO  [org.jboss.security.auth.login.XMLLoginConfig] Created
+2003-07-06 08:50:16,862 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Creating
+2003-07-06 08:50:16,862 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Created
+2003-07-06 08:50:16,863 INFO  [org.jboss.deployment.EARDeployer] Creating
+2003-07-06 08:50:16,890 INFO  [org.jboss.deployment.EARDeployer] Created
+2003-07-06 08:50:16,893 INFO  [org.jboss.varia.deployment.BeanShellSubDeployer] Creating
+2003-07-06 08:50:16,918 INFO  [org.jboss.varia.deployment.BeanShellSubDeployer] Created
+2003-07-06 08:50:16,921 INFO  [org.jboss.deployment.scanner.URLDeploymentScanner] Creating
+2003-07-06 08:50:16,929 INFO  [org.jboss.deployment.scanner.URLDeploymentScanner] Created
+2003-07-06 08:50:16,932 INFO  [org.jboss.logging.Log4jService] Starting
+2003-07-06 08:50:16,933 INFO  [org.jboss.logging.Log4jService] Started
+2003-07-06 08:50:16,933 INFO  [org.jboss.web.WebService] Starting
+2003-07-06 08:50:16,937 INFO  [org.jboss.deployment.scanner.AbstractDeploymentScanner$ScannerThread] Running
+2003-07-06 08:50:16,941 INFO  [org.jboss.web.WebService] Started WebServer with address: 192.168.7.3:8083
+2003-07-06 08:50:16,942 INFO  [org.jboss.web.WebService] Using RMI server codebase: http://gao-2001:8083/
+2003-07-06 08:50:16,942 INFO  [org.jboss.web.WebService] Started
+2003-07-06 08:50:16,942 INFO  [org.jboss.management.j2ee.LocalJBossServerDomain] Starting
+2003-07-06 08:50:16,943 INFO  [org.jboss.management.j2ee.LocalJBossServerDomain] Started
+2003-07-06 08:50:16,943 INFO  [org.jboss.naming.NamingService] Starting
+2003-07-06 08:50:16,946 INFO  [org.jboss.naming.NamingService] Starting jnp server
+2003-07-06 08:50:17,250 INFO  [org.jboss.naming.NamingService] Started jnpPort=1099, rmiPort=0, backlog=50, bindAddress=null, Client SocketFactory=null, Server SocketFactory=null
+2003-07-06 08:50:17,276 INFO  [org.jboss.naming.NamingService] Listening on port 1099
+2003-07-06 08:50:17,299 INFO  [org.jboss.naming.NamingService] Started
+2003-07-06 08:50:17,300 INFO  [org.jboss.naming.JNDIView] Starting
+2003-07-06 08:50:17,300 INFO  [org.jboss.naming.JNDIView] Started
+2003-07-06 08:50:17,301 INFO  [org.jboss.security.plugins.SecurityConfig] Starting
+2003-07-06 08:50:17,304 INFO  [org.jboss.security.plugins.SecurityConfig] Started
+2003-07-06 08:50:17,305 INFO  [org.jboss.security.auth.login.XMLLoginConfig] Starting
+2003-07-06 08:50:17,410 INFO  [org.jboss.security.auth.login.XMLLoginConfig] Started
+2003-07-06 08:50:17,411 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Starting
+2003-07-06 08:50:17,429 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Started
+2003-07-06 08:50:17,430 INFO  [org.jboss.deployment.EARDeployer] Starting
+2003-07-06 08:50:17,430 INFO  [org.jboss.deployment.MainDeployer] Adding deployer: org.jboss.deployment.EARDeployer@1b446d1
+2003-07-06 08:50:17,431 INFO  [org.jboss.deployment.EARDeployer] Started
+2003-07-06 08:50:17,432 INFO  [org.jboss.varia.deployment.BeanShellSubDeployer] Starting
+2003-07-06 08:50:17,451 INFO  [org.jboss.deployment.MainDeployer] Adding deployer: org.jboss.varia.deployment.BeanShellSubDeployer@a77106
+2003-07-06 08:50:17,452 INFO  [org.jboss.varia.deployment.BeanShellSubDeployer] Started
+2003-07-06 08:50:17,455 INFO  [org.jboss.deployment.scanner.URLDeploymentScanner] Starting
+2003-07-06 08:50:17,475 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/
+2003-07-06 08:50:17,587 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:17,599 INFO  [org.jboss.deployment.MainDeployer] deployment waiting for deployer: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:17,740 INFO  [org.jboss.invocation.http.server.HttpInvoker] Creating
+2003-07-06 08:50:17,740 INFO  [org.jboss.invocation.http.server.HttpInvoker] Created
+2003-07-06 08:50:17,742 INFO  [org.jboss.invocation.http.server.HttpInvokerHA] Creating
+2003-07-06 08:50:17,742 INFO  [org.jboss.invocation.http.server.HttpInvokerHA] Created
+2003-07-06 08:50:17,743 INFO  [org.jboss.invocation.http.server.HttpProxyFactory] Creating
+2003-07-06 08:50:17,743 INFO  [org.jboss.invocation.http.server.HttpProxyFactory] Created
+2003-07-06 08:50:17,744 INFO  [org.jboss.invocation.http.server.HttpProxyFactory] Creating
+2003-07-06 08:50:17,744 INFO  [org.jboss.invocation.http.server.HttpProxyFactory] Created
+2003-07-06 08:50:17,748 INFO  [org.jboss.invocation.http.server.HttpInvoker] Starting
+2003-07-06 08:50:17,772 INFO  [org.jboss.invocation.http.server.HttpInvoker] Started
+2003-07-06 08:50:17,774 INFO  [org.jboss.invocation.http.server.HttpInvokerHA] Starting
+2003-07-06 08:50:17,775 INFO  [org.jboss.invocation.http.server.HttpInvokerHA] Started
+2003-07-06 08:50:17,775 INFO  [org.jboss.invocation.http.server.HttpProxyFactory] Starting
+2003-07-06 08:50:17,829 INFO  [org.jboss.invocation.http.server.HttpProxyFactory] Started
+2003-07-06 08:50:17,830 INFO  [org.jboss.invocation.http.server.HttpProxyFactory] Starting
+2003-07-06 08:50:17,831 INFO  [org.jboss.invocation.http.server.HttpProxyFactory] Started
+2003-07-06 08:50:17,897 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/
+2003-07-06 08:50:17,898 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-jca.sar
+2003-07-06 08:50:18,089 INFO  [org.jboss.resource.RARDeployer] Creating
+2003-07-06 08:50:18,116 INFO  [org.jboss.resource.RARDeployer] Created
+2003-07-06 08:50:18,117 INFO  [org.jboss.deployment.XSLSubDeployer] Creating
+2003-07-06 08:50:18,633 INFO  [org.jboss.deployment.XSLSubDeployer] Created templates: org.apache.xalan.templates.StylesheetRoot@a00185
+2003-07-06 08:50:18,633 INFO  [org.jboss.deployment.XSLSubDeployer] Created
+2003-07-06 08:50:18,634 INFO  [org.jboss.resource.RARDeployer] Starting
+2003-07-06 08:50:18,634 INFO  [org.jboss.deployment.MainDeployer] Adding deployer: org.jboss.resource.RARDeployer@c3c315
+2003-07-06 08:50:18,635 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:18,636 INFO  [org.jboss.deployment.MainDeployer] deployment waiting for deployer: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:18,636 INFO  [org.jboss.deployment.MainDeployer] Deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/ is waiting for an appropriate deployer.
+2003-07-06 08:50:18,637 INFO  [org.jboss.resource.RARDeployer] Started
+2003-07-06 08:50:18,637 INFO  [org.jboss.deployment.XSLSubDeployer] Starting
+2003-07-06 08:50:18,637 INFO  [org.jboss.deployment.MainDeployer] Adding deployer: org.jboss.deployment.XSLSubDeployer@1328c7a
+2003-07-06 08:50:18,638 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:18,639 INFO  [org.jboss.deployment.MainDeployer] deployment waiting for deployer: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:18,639 INFO  [org.jboss.deployment.MainDeployer] Deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/ is waiting for an appropriate deployer.
+2003-07-06 08:50:18,639 INFO  [org.jboss.deployment.XSLSubDeployer] Started
+2003-07-06 08:50:18,651 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-jca.sar
+2003-07-06 08:50:18,652 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/
+2003-07-06 08:50:18,770 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/axis.jar
+2003-07-06 08:50:18,771 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/commons-discovery.jar
+2003-07-06 08:50:18,771 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/commons-logging.jar
+2003-07-06 08:50:18,774 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jaxrpc.jar
+2003-07-06 08:50:18,774 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jboss-net.jar
+2003-07-06 08:50:18,775 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jboss-net.war/
+2003-07-06 08:50:18,775 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jmx-net.wsr/
+2003-07-06 08:50:18,778 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/saaj.jar
+2003-07-06 08:50:18,779 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/wsdl4j.jar
+2003-07-06 08:50:19,378 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/commons-logging.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/log4j.jar which could not be opened, entry ignored
+2003-07-06 08:50:19,379 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/commons-logging.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/log4j-core.jar which could not be opened, entry ignored
+2003-07-06 08:50:19,380 INFO  [org.jboss.deployment.MainDeployer] deployment waiting for deployer: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jboss-net.war/
+2003-07-06 08:50:19,389 INFO  [org.jboss.deployment.MainDeployer] deployment waiting for deployer: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jmx-net.wsr/
+2003-07-06 08:50:19,539 INFO  [org.jboss.net.axis.server.AxisService] Creating
+2003-07-06 08:50:19,562 INFO  [org.jboss.net.axis.server.AxisService] Created
+2003-07-06 08:50:19,568 INFO  [org.jboss.net.jmx.adaptor.server.Adaptor] Creating
+2003-07-06 08:50:19,568 INFO  [org.jboss.net.jmx.adaptor.server.Adaptor] Created
+2003-07-06 08:50:19,579 INFO  [org.jboss.net.axis.server.AxisService] Starting
+2003-07-06 08:50:22,656 INFO  [org.jboss.deployment.MainDeployer] Adding deployer: org.jboss.net.axis.server.AxisService@2f8116
+2003-07-06 08:50:22,657 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:22,658 INFO  [org.jboss.deployment.MainDeployer] deployment waiting for deployer: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:22,658 INFO  [org.jboss.deployment.MainDeployer] Deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/ is waiting for an appropriate deployer.
+2003-07-06 08:50:22,658 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jboss-net.war/
+2003-07-06 08:50:22,659 INFO  [org.jboss.deployment.MainDeployer] deployment waiting for deployer: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jboss-net.war/
+2003-07-06 08:50:22,659 INFO  [org.jboss.deployment.MainDeployer] Deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jboss-net.war/ is waiting for an appropriate deployer.
+2003-07-06 08:50:22,659 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jmx-net.wsr/
+2003-07-06 08:50:22,717 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jmx-net.wsr/
+2003-07-06 08:50:22,717 INFO  [org.jboss.net.axis.server.AxisService] Started
+2003-07-06 08:50:22,717 INFO  [org.jboss.net.jmx.adaptor.server.Adaptor] Starting
+2003-07-06 08:50:22,718 INFO  [org.jboss.net.jmx.adaptor.server.Adaptor] Started
+2003-07-06 08:50:22,727 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/
+2003-07-06 08:50:22,728 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/
+2003-07-06 08:50:22,734 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/ClusteredHttpSessionEB.jar/
+2003-07-06 08:50:22,749 INFO  [org.jboss.deployment.MainDeployer] deployment waiting for deployer: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/ClusteredHttpSessionEB.jar/
+2003-07-06 08:50:22,790 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/
+2003-07-06 08:50:22,796 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/
+2003-07-06 08:50:22,806 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/bootstrap.jar
+2003-07-06 08:50:22,807 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/catalina.jar
+2003-07-06 08:50:22,807 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/commons-beanutils.jar
+2003-07-06 08:50:22,807 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/commons-collections.jar
+2003-07-06 08:50:22,808 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/commons-digester.jar
+2003-07-06 08:50:22,810 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/commons-logging.jar
+2003-07-06 08:50:22,810 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/jakarta-regexp-1.2.jar
+2003-07-06 08:50:22,811 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/jasper-compiler.jar
+2003-07-06 08:50:22,811 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/jasper-runtime.jar
+2003-07-06 08:50:22,812 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/naming-common.jar
+2003-07-06 08:50:22,812 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/naming-resources.jar
+2003-07-06 08:50:22,813 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/servlets-common.jar
+2003-07-06 08:50:22,813 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/servlets-default.jar
+2003-07-06 08:50:22,813 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/servlets-invoker.jar
+2003-07-06 08:50:22,814 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/servlets-webdav.jar
+2003-07-06 08:50:22,814 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-coyote.jar
+2003-07-06 08:50:22,814 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-http11.jar
+2003-07-06 08:50:22,815 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-jk2.jar
+2003-07-06 08:50:22,815 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-util.jar
+2003-07-06 08:50:22,815 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat41-service.jar
+2003-07-06 08:50:23,140 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-util.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/log4j.jar which could not be opened, entry ignored
+2003-07-06 08:50:23,141 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-util.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/log4j-core.jar which could not be opened, entry ignored
+2003-07-06 08:50:23,141 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-util.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/mx4j.jar which could not be opened, entry ignored
+2003-07-06 08:50:23,176 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-jk2.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/workers.jar which could not be opened, entry ignored
+2003-07-06 08:50:23,176 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-jk2.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/classes/ which could not be opened, entry ignored
+2003-07-06 08:50:23,181 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/tomcat-jk2.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/log4j.jar which could not be opened, entry ignored
+2003-07-06 08:50:23,602 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/commons-logging.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/log4j.jar which could not be opened, entry ignored
+2003-07-06 08:50:23,602 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/commons-logging.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/log4j-core.jar which could not be opened, entry ignored
+2003-07-06 08:50:23,625 WARN  [org.jboss.deployment.MainDeployer] The manifest entry in file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/bootstrap.jar references URL file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/commons-daemon.jar which could not be opened, entry ignored
+2003-07-06 08:50:23,905 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] Creating
+2003-07-06 08:50:23,930 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] Created
+2003-07-06 08:50:23,942 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] Starting
+2003-07-06 08:50:24,943 INFO  [STDOUT] Apache Tomcat/4.1.24-LE-jdk14
+2003-07-06 08:50:25,108 INFO  [org.apache.coyote.http11.Http11Protocol] Initializing Coyote HTTP/1.1 on port 8080
+2003-07-06 08:50:25,129 INFO  [org.apache.coyote.http11.Http11Protocol] Starting Coyote HTTP/1.1 on port 8080
+2003-07-06 08:50:25,203 WARN  [org.apache.jk.server.JkMain] No properties file found /opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/conf/jk2.properties
+2003-07-06 08:50:25,568 INFO  [org.apache.jk.common.ChannelSocket] JK2: ajp13 listening on /0.0.0.0:8009
+2003-07-06 08:50:25,842 INFO  [org.apache.jk.server.JkMain] Jk running ID=0 time=4/639  config=null
+2003-07-06 08:50:25,842 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] OK
+2003-07-06 08:50:25,843 INFO  [org.jboss.deployment.MainDeployer] Adding deployer: org.jboss.web.catalina.EmbeddedCatalinaService41@f7345b
+2003-07-06 08:50:25,843 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:26,142 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] deploy, ctxPath=/invoker, warUrl=file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:26,605 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/invoker]: Deploying class repositories to work directory /opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/work/MainEngine/localhost/invoker
+2003-07-06 08:50:26,628 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/invoker]: Deploy class files /WEB-INF/classes to /opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/WEB-INF/classes
+2003-07-06 08:50:27,499 INFO  [org.jboss.web.localhost.Engine] ContextConfig[/invoker]: Added certificates -> request attribute Valve
+2003-07-06 08:50:27,586 INFO  [org.jboss.web.localhost.Engine] ContextConfig[/invoker]: Configured an authenticator for method BASIC
+2003-07-06 08:50:27,663 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] Using Java2 parent classloader delegation: true
+2003-07-06 08:50:27,664 INFO  [org.jboss.web.localhost.Engine] StandardManager[/invoker]: Seeding random number generator class java.security.SecureRandom
+2003-07-06 08:50:27,665 INFO  [org.jboss.web.localhost.Engine] StandardManager[/invoker]: Seeding of random number generator has been completed
+2003-07-06 08:50:27,797 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/invoker:default]: Loading container servlet default
+2003-07-06 08:50:27,876 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/invoker:invoker]: Loading container servlet invoker
+2003-07-06 08:50:28,225 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/http-invoker.sar/invoker.war/
+2003-07-06 08:50:28,232 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jboss-net.war/
+2003-07-06 08:50:28,385 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] deploy, ctxPath=/jboss-net, warUrl=file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jboss-net.war/
+2003-07-06 08:50:28,398 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/jboss-net]: Deploying class repositories to work directory /opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/work/MainEngine/localhost/jboss-net
+2003-07-06 08:50:28,884 INFO  [org.jboss.web.localhost.Engine] ContextConfig[/jboss-net]: Added certificates -> request attribute Valve
+2003-07-06 08:50:28,885 INFO  [org.jboss.web.localhost.Engine] ContextConfig[/jboss-net]: Configured an authenticator for method BASIC
+2003-07-06 08:50:28,927 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] Using Java2 parent classloader delegation: true
+2003-07-06 08:50:28,928 INFO  [org.jboss.web.localhost.Engine] StandardManager[/jboss-net]: Seeding random number generator class java.security.SecureRandom
+2003-07-06 08:50:28,929 INFO  [org.jboss.web.localhost.Engine] StandardManager[/jboss-net]: Seeding of random number generator has been completed
+2003-07-06 08:50:28,931 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/jboss-net:default]: Loading container servlet default
+2003-07-06 08:50:28,931 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/jboss-net:invoker]: Loading container servlet invoker
+2003-07-06 08:50:28,945 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-net.sar/jboss-net.war/
+2003-07-06 08:50:28,945 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/ClusteredHttpSessionEB.jar/
+2003-07-06 08:50:28,946 INFO  [org.jboss.deployment.MainDeployer] deployment waiting for deployer: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/ClusteredHttpSessionEB.jar/
+2003-07-06 08:50:28,947 INFO  [org.jboss.deployment.MainDeployer] Deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/ClusteredHttpSessionEB.jar/ is waiting for an appropriate deployer.
+2003-07-06 08:50:28,947 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] Started
+2003-07-06 08:50:28,954 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossweb-tomcat.sar/
+2003-07-06 08:50:28,955 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jbossmq-httpil.sar/
+2003-07-06 08:50:28,978 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jbossmq-httpil.sar/jbossmq-httpil.war/
+2003-07-06 08:50:29,347 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] deploy, ctxPath=/jbossmq-httpil, warUrl=file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jbossmq-httpil.sar/jbossmq-httpil.war/
+2003-07-06 08:50:29,364 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/jbossmq-httpil]: Deploying class repositories to work directory /opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/work/MainEngine/localhost/jbossmq-httpil
+2003-07-06 08:50:29,365 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/jbossmq-httpil]: Deploy class files /WEB-INF/classes to /opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jbossmq-httpil.sar/jbossmq-httpil.war/WEB-INF/classes
+2003-07-06 08:50:29,874 INFO  [org.jboss.web.localhost.Engine] ContextConfig[/jbossmq-httpil]: Added certificates -> request attribute Valve
+2003-07-06 08:50:29,874 INFO  [org.jboss.web.localhost.Engine] ContextConfig[/jbossmq-httpil]: Configured an authenticator for method BASIC
+2003-07-06 08:50:29,922 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] Using Java2 parent classloader delegation: true
+2003-07-06 08:50:29,922 INFO  [org.jboss.web.localhost.Engine] StandardManager[/jbossmq-httpil]: Seeding random number generator class java.security.SecureRandom
+2003-07-06 08:50:29,923 INFO  [org.jboss.web.localhost.Engine] StandardManager[/jbossmq-httpil]: Seeding of random number generator has been completed
+2003-07-06 08:50:29,925 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/jbossmq-httpil:default]: Loading container servlet default
+2003-07-06 08:50:29,926 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/jbossmq-httpil:invoker]: Loading container servlet invoker
+2003-07-06 08:50:29,948 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jbossmq-httpil.sar/
+2003-07-06 08:50:29,949 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-ejb-connector-server.sar
+2003-07-06 08:50:29,966 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-ejb-connector-server.sar
+2003-07-06 08:50:29,967 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-invoker-adaptor-server.sar/
+2003-07-06 08:50:30,194 INFO  [org.jboss.jmx.connector.invoker.InvokerAdaptorService] Creating
+2003-07-06 08:50:30,194 INFO  [org.jboss.jmx.connector.invoker.InvokerAdaptorService] Created
+2003-07-06 08:50:30,196 INFO  [org.jboss.jmx.connector.invoker.InvokerAdaptorService] Starting
+2003-07-06 08:50:30,217 INFO  [org.jboss.jmx.connector.invoker.InvokerAdaptorService] Started
+2003-07-06 08:50:30,228 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-invoker-adaptor-server.sar/
+2003-07-06 08:50:30,230 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-rmi-adaptor.sar/
+2003-07-06 08:50:30,255 INFO  [org.jboss.jmx.adaptor.rmi.RMIAdaptorService] Creating
+2003-07-06 08:50:30,255 INFO  [org.jboss.jmx.adaptor.rmi.RMIAdaptorService] Created
+2003-07-06 08:50:30,256 INFO  [org.jboss.jmx.adaptor.rmi.RMIAdaptorService] Starting
+2003-07-06 08:50:30,331 INFO  [org.jboss.jmx.adaptor.rmi.RMIAdaptorService] Started
+2003-07-06 08:50:30,341 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-rmi-adaptor.sar/
+2003-07-06 08:50:30,342 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/management/console-mgr.sar
+2003-07-06 08:50:30,364 INFO  [org.jboss.deployment.SARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/management/console-mgr.sar/33.console-mgr.sar-contents/console-mgr-classes.jar
+2003-07-06 08:50:30,448 INFO  [org.jboss.console.manager.PluginManager] Creating
+2003-07-06 08:50:30,451 INFO  [org.jboss.console.manager.PluginManager] Created
+2003-07-06 08:50:30,454 INFO  [org.jboss.console.manager.PluginManager] Starting
+2003-07-06 08:50:30,499 INFO  [org.jboss.console.manager.PluginManager] Started
+2003-07-06 08:50:30,509 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/management/console-mgr.sar
+2003-07-06 08:50:30,510 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/uuid-key-generator.sar
+2003-07-06 08:50:30,571 INFO  [org.jboss.ejb.plugins.keygenerator.uuid.UUIDKeyGeneratorFactoryService] Creating
+2003-07-06 08:50:30,571 INFO  [org.jboss.ejb.plugins.keygenerator.uuid.UUIDKeyGeneratorFactoryService] Created
+2003-07-06 08:50:30,572 INFO  [org.jboss.ejb.plugins.keygenerator.uuid.UUIDKeyGeneratorFactoryService] Starting
+2003-07-06 08:50:30,585 INFO  [org.jboss.ejb.plugins.keygenerator.uuid.UUIDKeyGeneratorFactoryService] Started
+2003-07-06 08:50:30,597 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/uuid-key-generator.sar
+2003-07-06 08:50:30,598 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-local-jdbc.rar
+2003-07-06 08:50:30,761 INFO  [org.jboss.resource.RARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/jboss-local-jdbc.rar/35.jboss-local-jdbc.rar-contents/jboss-local-jdbc.jar
+2003-07-06 08:50:30,813 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-local-jdbc.rar
+2003-07-06 08:50:30,814 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-xa-jdbc.rar
+2003-07-06 08:50:31,067 INFO  [org.jboss.resource.RARMetaData] Loading JBoss Resource Adapter for JDBC 2 XA drivers
+2003-07-06 08:50:31,068 INFO  [org.jboss.resource.RARMetaData] Required license terms present. See deployment descriptor.
+2003-07-06 08:50:31,075 INFO  [org.jboss.resource.RARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/jboss-xa-jdbc.rar/36.jboss-xa-jdbc.rar-contents/jboss-xa-jdbc.jar
+2003-07-06 08:50:31,097 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jboss-xa-jdbc.rar
+2003-07-06 08:50:31,098 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jms-ra.rar
+2003-07-06 08:50:31,210 INFO  [org.jboss.resource.RARDeployer] nested deployment: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/jms/jms-ra.rar/37.jms-ra.rar-contents/jms-ra.jar
+2003-07-06 08:50:31,255 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jms-ra.rar
+2003-07-06 08:50:31,256 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/hsqldb-ds.xml
+2003-07-06 08:50:31,359 INFO  [org.jboss.deployment.XSLSubDeployer] transformed into doc: [#document: null]
+2003-07-06 08:50:31,544 INFO  [org.jboss.jdbc.HypersonicDatabase] Creating
+2003-07-06 08:50:31,545 INFO  [org.jboss.jdbc.HypersonicDatabase] Created
+2003-07-06 08:50:31,545 INFO  [org.jboss.resource.connectionmanager.RARDeployment] Creating
+2003-07-06 08:50:31,545 INFO  [org.jboss.resource.connectionmanager.RARDeployment] Created
+2003-07-06 08:50:31,546 INFO  [org.jboss.resource.connectionmanager.JBossManagedConnectionPool] Creating
+2003-07-06 08:50:31,546 INFO  [org.jboss.resource.connectionmanager.JBossManagedConnectionPool] Created
+2003-07-06 08:50:31,549 INFO  [org.jboss.jdbc.HypersonicDatabase] Starting
+2003-07-06 08:50:31,555 INFO  [org.jboss.jdbc.HypersonicDatabase] Started
+2003-07-06 08:50:31,555 INFO  [org.jboss.resource.connectionmanager.RARDeployment] Starting
+2003-07-06 08:50:31,621 INFO  [org.jboss.resource.connectionmanager.RARDeployment] Started
+2003-07-06 08:50:31,621 INFO  [org.jboss.resource.connectionmanager.JBossManagedConnectionPool] Starting
+2003-07-06 08:50:31,638 INFO  [org.jboss.resource.connectionmanager.JBossManagedConnectionPool] Started
+2003-07-06 08:50:31,687 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/hsqldb-ds.xml
+2003-07-06 08:50:31,690 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jms-ds.xml
+2003-07-06 08:50:31,717 INFO  [STDOUT] server.properties not found, using command line or default properties
+2003-07-06 08:50:31,718 INFO  [STDOUT] Opening database: /opt/jboss-3.2.1_tomcat-4.1.24/server/all/data/hypersonic/default
+2003-07-06 08:50:31,718 INFO  [STDOUT] HSQLDB server 1.7.1 is running
+2003-07-06 08:50:31,718 INFO  [STDOUT] Use SHUTDOWN to close normally. Use [Ctrl]+[C] to abort abruptly
+2003-07-06 08:50:31,825 INFO  [org.jboss.deployment.XSLSubDeployer] transformed into doc: [#document: null]
+2003-07-06 08:50:32,095 INFO  [org.jboss.jms.jndi.JMSProviderLoader] Creating
+2003-07-06 08:50:32,096 INFO  [org.jboss.jms.jndi.JMSProviderLoader] Created
+2003-07-06 08:50:32,097 INFO  [org.jboss.resource.connectionmanager.RARDeployment] Creating
+2003-07-06 08:50:32,097 INFO  [org.jboss.resource.connectionmanager.RARDeployment] Created
+2003-07-06 08:50:32,098 INFO  [org.jboss.resource.connectionmanager.JBossManagedConnectionPool] Creating
+2003-07-06 08:50:32,098 INFO  [org.jboss.resource.connectionmanager.JBossManagedConnectionPool] Created
+2003-07-06 08:50:32,099 INFO  [org.jboss.jms.jndi.JMSProviderLoader] Starting
+2003-07-06 08:50:32,129 INFO  [org.jboss.jms.jndi.JMSProviderLoader] Bound adapter to java:/DefaultJMSProvider
+2003-07-06 08:50:32,130 INFO  [org.jboss.jms.jndi.JMSProviderLoader] Started
+2003-07-06 08:50:32,130 INFO  [org.jboss.resource.connectionmanager.RARDeployment] Starting
+2003-07-06 08:50:32,232 INFO  [org.jboss.resource.connectionmanager.RARDeployment] Started
+2003-07-06 08:50:32,232 INFO  [org.jboss.resource.connectionmanager.JBossManagedConnectionPool] Starting
+2003-07-06 08:50:32,233 INFO  [org.jboss.resource.connectionmanager.JBossManagedConnectionPool] Started
+2003-07-06 08:50:32,265 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jms-ds.xml
+2003-07-06 08:50:32,268 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/cache-invalidation-service.xml
+2003-07-06 08:50:32,425 INFO  [STDOUT] Sun Jul 06 08:50:32 CDT 2003 Listening for connections ...
+2003-07-06 08:50:32,432 INFO  [org.jboss.cache.invalidation.InvalidationManager] Creating
+2003-07-06 08:50:32,432 INFO  [org.jboss.cache.invalidation.InvalidationManager] Created
+2003-07-06 08:50:32,433 INFO  [org.jboss.cache.invalidation.InvalidationManager] Starting
+2003-07-06 08:50:32,433 INFO  [org.jboss.cache.invalidation.InvalidationManager] Starting Invalidation Manager jboss.cache:service=InvalidationManager
+2003-07-06 08:50:32,433 INFO  [org.jboss.cache.invalidation.InvalidationManager] Started
+2003-07-06 08:50:32,456 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/cache-invalidation-service.xml
+2003-07-06 08:50:32,457 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/cluster-service.xml
+2003-07-06 08:50:32,608 INFO  [org.jboss.ha.framework.server.ClusterPartition] Creating
+2003-07-06 08:50:33,246 INFO  [org.jboss.ha.framework.server.ClusterPartition] Set the JavaGroups logging to log4j with category:org.apache.log4j.Logger@4b12d9, priority: DEBUG, JavaGroupsLevel: 4
+2003-07-06 08:50:33,390 INFO  [org.jboss.ha.framework.interfaces.HAPartition.DefaultPartition] Initializing
+2003-07-06 08:50:33,481 INFO  [org.jboss.ha.framework.server.ClusterPartition] Created
+2003-07-06 08:50:33,482 INFO  [org.jboss.ha.hasessionstate.server.HASessionStateService] Creating
+2003-07-06 08:50:33,510 INFO  [org.jboss.ha.hasessionstate.server.HASessionStateService] Created
+2003-07-06 08:50:33,510 INFO  [org.jboss.ha.jndi.HANamingService] Creating
+2003-07-06 08:50:33,656 INFO  [org.jboss.ha.jndi.HANamingService] Created
+2003-07-06 08:50:33,657 INFO  [org.jboss.cache.invalidation.bridges.JGCacheInvalidationBridge] Creating
+2003-07-06 08:50:33,657 INFO  [org.jboss.cache.invalidation.bridges.JGCacheInvalidationBridge] Created
+2003-07-06 08:50:33,660 INFO  [org.jboss.invocation.jrmp.server.JRMPInvokerHA] Creating
+2003-07-06 08:50:33,660 INFO  [org.jboss.invocation.jrmp.server.JRMPInvokerHA] Created
+2003-07-06 08:50:33,661 INFO  [org.jboss.ha.framework.server.ClusterPartition] Starting
+2003-07-06 08:50:33,662 INFO  [org.jboss.ha.framework.server.ClusterPartition] Connecting to channel
+2003-07-06 08:50:33,695 INFO  [STDOUT] 
+-------------------------------------------------------
+GMS: address is gao-2001:32803
+-------------------------------------------------------
+2003-07-06 08:50:35,777 INFO  [org.jboss.ha.framework.server.ClusterPartition] Starting channel
+2003-07-06 08:50:35,778 INFO  [org.jboss.ha.framework.interfaces.HAPartition.DefaultPartition] Number of cluster members: 1
+2003-07-06 08:50:35,778 INFO  [org.jboss.ha.framework.interfaces.HAPartition.DefaultPartition] Other members: 0
+2003-07-06 08:50:35,788 INFO  [org.jboss.ha.framework.server.ClusterPartition] Started ClusterPartition: DefaultPartition
+2003-07-06 08:50:35,788 INFO  [org.jboss.ha.framework.server.ClusterPartition] Started
+2003-07-06 08:50:35,788 INFO  [org.jboss.ha.hasessionstate.server.HASessionStateService] Starting
+2003-07-06 08:50:35,789 INFO  [org.jboss.ha.hasessionstate.server.HASessionStateService] Started
+2003-07-06 08:50:35,789 INFO  [org.jboss.ha.jndi.HANamingService] Starting
+2003-07-06 08:50:35,901 INFO  [org.jboss.ha.jndi.HANamingService] Listening on 0.0.0.0/0.0.0.0:1100
+2003-07-06 08:50:35,909 INFO  [org.jboss.ha.jndi.HANamingService$AutomaticDiscovery] Listening on /0.0.0.0:1102, group=230.0.0.4
+2003-07-06 08:50:35,910 INFO  [org.jboss.ha.jndi.HANamingService] Started
+2003-07-06 08:50:35,910 INFO  [org.jboss.cache.invalidation.bridges.JGCacheInvalidationBridge] Starting
+2003-07-06 08:50:35,913 INFO  [org.jboss.cache.invalidation.InvalidationManager] Subscribing a new cache-invalidation bridge
+2003-07-06 08:50:35,917 INFO  [org.jboss.cache.invalidation.bridges.JGCacheInvalidationBridge] Started
+2003-07-06 08:50:35,918 INFO  [org.jboss.invocation.jrmp.server.JRMPInvokerHA] Starting
+2003-07-06 08:50:35,928 INFO  [org.jboss.invocation.jrmp.server.JRMPInvokerHA] Started
+2003-07-06 08:50:35,981 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/cluster-service.xml
+2003-07-06 08:50:35,982 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/farm-service.xml
+2003-07-06 08:50:36,174 INFO  [org.jboss.ha.framework.server.FarmMemberService] Creating
+2003-07-06 08:50:36,176 INFO  [org.jboss.ha.framework.server.FarmMemberService] Created
+2003-07-06 08:50:36,177 INFO  [org.jboss.ha.framework.server.FarmMemberService] Starting
+2003-07-06 08:50:36,181 INFO  [org.jboss.ha.framework.server.FarmMemberService] Started
+2003-07-06 08:50:36,194 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/farm-service.xml
+2003-07-06 08:50:36,195 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/iiop-service.xml
+2003-07-06 08:50:36,267 INFO  [org.jboss.deployment.scanner.AbstractDeploymentScanner$ScannerThread] Running
+2003-07-06 08:50:36,294 INFO  [org.jboss.iiop.CorbaORBService] Creating
+2003-07-06 08:50:36,986 INFO  [org.jboss.iiop.CorbaORBService] Created
+2003-07-06 08:50:36,987 INFO  [org.jboss.invocation.iiop.IIOPInvoker] Creating
+2003-07-06 08:50:37,038 INFO  [org.jboss.invocation.iiop.IIOPInvoker] Created
+2003-07-06 08:50:37,039 INFO  [org.jboss.iiop.CorbaNamingService] Creating
+2003-07-06 08:50:37,039 INFO  [org.jboss.iiop.CorbaNamingService] Created
+2003-07-06 08:50:37,040 INFO  [org.jboss.iiop.CorbaORBService] Starting
+2003-07-06 08:50:37,040 INFO  [org.jboss.iiop.CorbaORBService] Started
+2003-07-06 08:50:37,041 INFO  [org.jboss.invocation.iiop.IIOPInvoker] Starting
+2003-07-06 08:50:37,044 INFO  [org.jboss.invocation.iiop.IIOPInvoker] Started
+2003-07-06 08:50:37,044 INFO  [org.jboss.iiop.CorbaNamingService] Starting
+2003-07-06 08:50:37,229 INFO  [org.jboss.iiop.CorbaNamingService] Naming: [IOR:000000000000002B49444C3A6F6D672E6F72672F436F734E616D696E672F4E616D696E67436F6E746578744578743A312E300000000000020000000000000068000102000000000C3139322E3136382E372E33000DC80000000000114A426F73732F4E616D696E672F726F6F74000000000000020000000000000008000000004A414300000000010000001C00000000000100010000000105010001000101090000000105010001000000010000002C0000000000000001000000010000001C00000000000100010000000105010001000101090000000105010001]
+2003-07-06 08:50:37,229 INFO  [org.jboss.iiop.CorbaNamingService] Started
+2003-07-06 08:50:37,240 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/iiop-service.xml
+2003-07-06 08:50:37,241 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jbossmq-destinations-service.xml
+2003-07-06 08:50:37,834 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jbossmq-destinations-service.xml
+2003-07-06 08:50:37,835 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jbossmq-service.xml
+2003-07-06 08:50:38,322 INFO  [org.jboss.mq.server.MessageCache] Creating
+2003-07-06 08:50:38,322 INFO  [org.jboss.mq.server.MessageCache] Created
+2003-07-06 08:50:38,323 INFO  [org.jboss.mq.pm.file.CacheStore] Creating
+2003-07-06 08:50:38,323 INFO  [org.jboss.mq.pm.file.CacheStore] Created
+2003-07-06 08:50:38,324 INFO  [org.jboss.mq.sm.file.DynamicStateManager] Creating
+2003-07-06 08:50:38,324 INFO  [org.jboss.mq.sm.file.DynamicStateManager] Created
+2003-07-06 08:50:38,327 INFO  [org.jboss.mq.server.MessageCache] Starting
+2003-07-06 08:50:38,328 INFO  [org.jboss.mq.server.MessageCache] Started
+2003-07-06 08:50:38,329 INFO  [org.jboss.mq.pm.file.CacheStore] Starting
+2003-07-06 08:50:38,330 INFO  [org.jboss.mq.pm.file.CacheStore] Started
+2003-07-06 08:50:38,331 INFO  [org.jboss.mq.sm.file.DynamicStateManager] Starting
+2003-07-06 08:50:38,352 INFO  [org.jboss.mq.sm.file.DynamicStateManager] Started
+2003-07-06 08:50:38,401 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jms/jbossmq-service.xml
+2003-07-06 08:50:38,402 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/mail-service.xml
+2003-07-06 08:50:38,448 INFO  [org.jboss.mail.MailService] Creating
+2003-07-06 08:50:38,449 INFO  [org.jboss.mail.MailService] Created
+2003-07-06 08:50:38,465 INFO  [org.jboss.mail.MailService] Starting
+2003-07-06 08:50:38,656 INFO  [org.jboss.mail.MailService] Mail Service bound to java:/Mail
+2003-07-06 08:50:38,656 INFO  [org.jboss.mail.MailService] Started
+2003-07-06 08:50:38,662 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/mail-service.xml
+2003-07-06 08:50:38,663 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/properties-service.xml
+2003-07-06 08:50:38,700 INFO  [org.jboss.varia.property.PropertyEditorManagerService] Creating
+2003-07-06 08:50:38,701 INFO  [org.jboss.varia.property.PropertyEditorManagerService] Created
+2003-07-06 08:50:38,703 INFO  [org.jboss.varia.property.SystemPropertiesService] Creating
+2003-07-06 08:50:38,703 INFO  [org.jboss.varia.property.SystemPropertiesService] Created
+2003-07-06 08:50:38,704 INFO  [org.jboss.varia.property.PropertyEditorManagerService] Starting
+2003-07-06 08:50:38,704 INFO  [org.jboss.varia.property.PropertyEditorManagerService] Started
+2003-07-06 08:50:38,704 INFO  [org.jboss.varia.property.SystemPropertiesService] Starting
+2003-07-06 08:50:38,704 INFO  [org.jboss.varia.property.SystemPropertiesService] Started
+2003-07-06 08:50:38,720 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/properties-service.xml
+2003-07-06 08:50:38,721 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/schedule-manager-service.xml
+2003-07-06 08:50:38,740 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/schedule-manager-service.xml
+2003-07-06 08:50:38,741 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/scheduler-service.xml
+2003-07-06 08:50:38,758 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/scheduler-service.xml
+2003-07-06 08:50:38,759 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/sqlexception-service.xml
+2003-07-06 08:50:38,783 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/sqlexception-service.xml
+2003-07-06 08:50:38,783 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/transaction-service.xml
+2003-07-06 08:50:38,850 INFO  [org.jboss.jms.asf.ServerSessionPoolLoader] Creating
+2003-07-06 08:50:38,850 INFO  [org.jboss.jms.asf.ServerSessionPoolLoader] Created
+2003-07-06 08:50:38,851 INFO  [org.jboss.tm.TransactionManagerService] Creating
+2003-07-06 08:50:38,851 INFO  [org.jboss.tm.TransactionManagerService] Created
+2003-07-06 08:50:38,874 INFO  [org.jboss.ejb.EJBDeployer] Creating
+2003-07-06 08:50:38,895 INFO  [org.jboss.ejb.EJBDeployer] Created
+2003-07-06 08:50:38,897 INFO  [org.jboss.invocation.jrmp.server.JRMPInvoker] Creating
+2003-07-06 08:50:38,897 INFO  [org.jboss.invocation.jrmp.server.JRMPInvoker] Created
+2003-07-06 08:50:38,898 INFO  [org.jboss.invocation.jrmp.server.JRMPProxyFactory] Creating
+2003-07-06 08:50:38,898 INFO  [org.jboss.invocation.jrmp.server.JRMPProxyFactory] Created
+2003-07-06 08:50:38,899 INFO  [org.jboss.invocation.local.LocalInvoker] Creating
+2003-07-06 08:50:38,899 INFO  [org.jboss.invocation.local.LocalInvoker] Created
+2003-07-06 08:50:38,900 INFO  [org.jboss.invocation.pooled.server.PooledInvoker] Creating
+2003-07-06 08:50:38,900 INFO  [org.jboss.invocation.pooled.server.PooledInvoker] Created
+2003-07-06 08:50:38,901 INFO  [org.jboss.tm.usertx.server.ClientUserTransactionService] Creating
+2003-07-06 08:50:38,901 INFO  [org.jboss.tm.usertx.server.ClientUserTransactionService] Created
+2003-07-06 08:50:38,905 INFO  [org.jboss.resource.connectionmanager.CachedConnectionManager] Creating
+2003-07-06 08:50:38,905 INFO  [org.jboss.resource.connectionmanager.CachedConnectionManager] Created
+2003-07-06 08:50:38,906 INFO  [org.jboss.resource.connectionmanager.TxConnectionManager] Creating
+2003-07-06 08:50:38,906 INFO  [org.jboss.resource.connectionmanager.TxConnectionManager] Created
+2003-07-06 08:50:38,907 INFO  [org.jboss.mq.pm.jdbc2.PersistenceManager] Creating
+2003-07-06 08:50:38,907 INFO  [org.jboss.mq.pm.jdbc2.PersistenceManager] Created
+2003-07-06 08:50:38,907 INFO  [org.jboss.mq.server.jmx.DestinationManager] Creating
+2003-07-06 08:50:38,929 INFO  [org.jboss.mq.server.jmx.DestinationManager] Created
+2003-07-06 08:50:38,976 INFO  [org.jboss.mq.server.jmx.Queue.A] Creating
+2003-07-06 08:50:38,977 INFO  [org.jboss.mq.server.jmx.Queue.A] Created
+2003-07-06 08:50:38,977 INFO  [org.jboss.mq.server.jmx.Queue.B] Creating
+2003-07-06 08:50:38,977 INFO  [org.jboss.mq.server.jmx.Queue.B] Created
+2003-07-06 08:50:38,978 INFO  [org.jboss.mq.server.jmx.Queue.C] Creating
+2003-07-06 08:50:38,978 INFO  [org.jboss.mq.server.jmx.Queue.C] Created
+2003-07-06 08:50:38,978 INFO  [org.jboss.mq.server.jmx.Queue.D] Creating
+2003-07-06 08:50:38,978 INFO  [org.jboss.mq.server.jmx.Queue.D] Created
+2003-07-06 08:50:38,979 INFO  [org.jboss.mq.server.jmx.Queue.ex] Creating
+2003-07-06 08:50:38,979 INFO  [org.jboss.mq.server.jmx.Queue.ex] Created
+2003-07-06 08:50:38,980 INFO  [org.jboss.mq.security.SecurityManager] Creating
+2003-07-06 08:50:38,980 INFO  [org.jboss.mq.security.SecurityManager] Created
+2003-07-06 08:50:38,980 INFO  [org.jboss.mq.server.jmx.Topic.testTopic] Creating
+2003-07-06 08:50:38,981 INFO  [org.jboss.mq.server.jmx.Topic.testTopic] Created
+2003-07-06 08:50:38,981 INFO  [org.jboss.mq.server.jmx.Topic.securedTopic] Creating
+2003-07-06 08:50:38,981 INFO  [org.jboss.mq.server.jmx.Topic.securedTopic] Created
+2003-07-06 08:50:38,986 INFO  [org.jboss.mq.server.jmx.Topic.testDurableTopic] Creating
+2003-07-06 08:50:38,986 INFO  [org.jboss.mq.server.jmx.Topic.testDurableTopic] Created
+2003-07-06 08:50:38,987 INFO  [org.jboss.mq.server.jmx.Queue.testQueue] Creating
+2003-07-06 08:50:38,987 INFO  [org.jboss.mq.server.jmx.Queue.testQueue] Created
+2003-07-06 08:50:38,987 INFO  [org.jboss.mq.server.jmx.InterceptorLoader] Creating
+2003-07-06 08:50:38,987 INFO  [org.jboss.mq.server.jmx.InterceptorLoader] Created
+2003-07-06 08:50:38,988 INFO  [org.jboss.mq.server.jmx.Invoker] Creating
+2003-07-06 08:50:38,990 INFO  [org.jboss.mq.server.jmx.Invoker] Created
+2003-07-06 08:50:38,991 INFO  [org.jboss.mq.il.http.HTTPServerILService] Creating
+2003-07-06 08:50:38,991 INFO  [org.jboss.mq.il.http.HTTPServerILService] Created
+2003-07-06 08:50:38,992 INFO  [org.jboss.mq.il.jvm.JVMServerILService] Creating
+2003-07-06 08:50:38,992 INFO  [org.jboss.mq.il.jvm.JVMServerILService] Created
+2003-07-06 08:50:38,992 INFO  [org.jboss.mq.il.rmi.RMIServerILService] Creating
+2003-07-06 08:50:38,992 INFO  [org.jboss.mq.il.rmi.RMIServerILService] Created
+2003-07-06 08:50:38,993 INFO  [org.jboss.mq.il.oil.OILServerILService] Creating
+2003-07-06 08:50:38,993 INFO  [org.jboss.mq.il.oil.OILServerILService] Created
+2003-07-06 08:50:38,993 INFO  [org.jboss.mq.il.uil.UILServerILService] Creating
+2003-07-06 08:50:38,994 INFO  [org.jboss.mq.il.uil.UILServerILService] Created
+2003-07-06 08:50:38,994 INFO  [org.jboss.mq.il.oil2.OIL2ServerILService] Creating
+2003-07-06 08:50:38,994 INFO  [org.jboss.mq.il.oil2.OIL2ServerILService] Created
+2003-07-06 08:50:38,995 INFO  [org.jboss.mq.il.uil2.UILServerILService] Creating
+2003-07-06 08:50:38,995 INFO  [org.jboss.mq.il.uil2.UILServerILService] Created
+2003-07-06 08:50:38,995 INFO  [org.jboss.mq.server.jmx.Queue.DLQ] Creating
+2003-07-06 08:50:38,995 INFO  [org.jboss.mq.server.jmx.Queue.DLQ] Created
+2003-07-06 08:50:39,000 INFO  [org.jboss.resource.connectionmanager.TxConnectionManager] Creating
+2003-07-06 08:50:39,001 INFO  [org.jboss.resource.connectionmanager.TxConnectionManager] Created
+2003-07-06 08:50:39,002 INFO  [org.jboss.jms.asf.ServerSessionPoolLoader] Starting
+2003-07-06 08:50:39,012 INFO  [org.jboss.jms.asf.ServerSessionPoolLoader] pool factory StdJMSPool bound to java:/StdJMSPool
+2003-07-06 08:50:39,013 INFO  [org.jboss.jms.asf.ServerSessionPoolLoader] Started
+2003-07-06 08:50:39,013 INFO  [org.jboss.tm.TransactionManagerService] Starting
+2003-07-06 08:50:39,107 INFO  [org.jboss.tm.TransactionManagerService] Started
+2003-07-06 08:50:39,110 INFO  [org.jboss.ejb.EJBDeployer] Starting
+2003-07-06 08:50:39,129 INFO  [org.jboss.deployment.MainDeployer] Adding deployer: org.jboss.ejb.EJBDeployer@29f93b
+2003-07-06 08:50:39,130 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/ClusteredHttpSessionEB.jar/
+2003-07-06 08:50:40,461 INFO  [org.jboss.ejb.EjbModule] Creating
+2003-07-06 08:50:40,474 INFO  [org.jboss.ejb.EjbModule] Deploying ClusteredHTTPSession
+2003-07-06 08:50:40,825 INFO  [org.jboss.ejb.EntityContainer] Creating
+2003-07-06 08:50:40,856 INFO  [org.jboss.ejb.plugins.EntityInstancePool] Creating
+2003-07-06 08:50:40,856 INFO  [org.jboss.ejb.plugins.EntityInstancePool] Created
+2003-07-06 08:50:40,896 INFO  [org.jboss.ejb.EntityContainer] Created
+2003-07-06 08:50:40,897 INFO  [org.jboss.ha.httpsession.server.ClusteredHTTPSessionService] Creating
+2003-07-06 08:50:40,897 INFO  [org.jboss.ha.httpsession.server.ClusteredHTTPSessionService] Created
+2003-07-06 08:50:40,898 INFO  [org.jboss.ejb.EjbModule] Created
+2003-07-06 08:50:40,899 INFO  [org.jboss.ejb.EjbModule] Starting
+2003-07-06 08:50:40,899 INFO  [org.jboss.ejb.EjbModule] Started
+2003-07-06 08:50:40,906 INFO  [org.jboss.ejb.EJBDeployer] Deployed: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/ClusteredHttpSessionEB.jar/
+2003-07-06 08:50:40,979 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jbossha-httpsession.sar/ClusteredHttpSessionEB.jar/
+2003-07-06 08:50:40,979 INFO  [org.jboss.ejb.EJBDeployer] Started
+2003-07-06 08:50:40,980 INFO  [org.jboss.invocation.jrmp.server.JRMPInvoker] Starting
+2003-07-06 08:50:41,007 INFO  [org.jboss.invocation.jrmp.server.JRMPInvoker] Started
+2003-07-06 08:50:41,008 INFO  [org.jboss.invocation.jrmp.server.JRMPProxyFactory] Starting
+2003-07-06 08:50:41,124 INFO  [org.jboss.invocation.jrmp.server.JRMPProxyFactory] Started
+2003-07-06 08:50:41,124 INFO  [org.jboss.ejb.EntityContainer] Starting
+2003-07-06 08:50:41,180 INFO  [org.jboss.ejb.plugins.EntityInstancePool] Starting
+2003-07-06 08:50:41,181 INFO  [org.jboss.ejb.plugins.EntityInstancePool] Started
+2003-07-06 08:50:41,181 INFO  [org.jboss.ejb.EntityContainer] Started
+2003-07-06 08:50:41,181 INFO  [org.jboss.ha.httpsession.server.ClusteredHTTPSessionService] Starting
+2003-07-06 08:50:41,192 INFO  [org.jboss.ha.httpsession.server.ClusteredHTTPSessionService] Started
+2003-07-06 08:50:41,193 INFO  [org.jboss.invocation.local.LocalInvoker] Starting
+2003-07-06 08:50:41,194 INFO  [org.jboss.invocation.local.LocalInvoker] Started
+2003-07-06 08:50:41,194 INFO  [org.jboss.invocation.pooled.server.PooledInvoker] Starting
+2003-07-06 08:50:41,215 INFO  [org.jboss.invocation.pooled.server.PooledInvoker] Started
+2003-07-06 08:50:41,216 INFO  [org.jboss.tm.usertx.server.ClientUserTransactionService] Starting
+2003-07-06 08:50:41,248 INFO  [org.jboss.tm.usertx.server.ClientUserTransactionService] Started
+2003-07-06 08:50:41,249 INFO  [org.jboss.resource.connectionmanager.CachedConnectionManager] Starting
+2003-07-06 08:50:41,255 INFO  [org.jboss.resource.connectionmanager.CachedConnectionManager] Started
+2003-07-06 08:50:41,256 INFO  [org.jboss.resource.connectionmanager.TxConnectionManager] Starting
+2003-07-06 08:50:41,294 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Created securityMgr=org.jboss.security.plugins.JaasSecurityManager@1cc5d23
+2003-07-06 08:50:41,306 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] setCachePolicy, c=org.jboss.util.TimedCachePolicy@d38976
+2003-07-06 08:50:41,306 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Added HsqlDbRealm, org.jboss.security.plugins.SecurityDomainContext@1e5c339 to map
+2003-07-06 08:50:41,321 INFO  [org.jboss.resource.adapter.jdbc.local.LocalManagedConnectionFactory.DefaultDS] Bound connection factory for resource adapter for ConnectionManager 'jboss.jca:service=LocalTxCM,name=DefaultDS to JNDI name 'java:/DefaultDS'
+2003-07-06 08:50:41,321 INFO  [org.jboss.resource.connectionmanager.TxConnectionManager] Started
+2003-07-06 08:50:41,321 INFO  [org.jboss.mq.pm.jdbc2.PersistenceManager] Starting
+2003-07-06 08:50:41,830 INFO  [org.jboss.mq.pm.jdbc2.PersistenceManager] Started
+2003-07-06 08:50:41,830 INFO  [org.jboss.mq.server.jmx.DestinationManager] Starting
+2003-07-06 08:50:41,848 INFO  [org.jboss.mq.server.jmx.DestinationManager] Started
+2003-07-06 08:50:41,849 INFO  [org.jboss.mq.server.jmx.Queue.A] Starting
+2003-07-06 08:50:41,884 INFO  [org.jboss.mq.server.jmx.Queue.A] Bound to JNDI name: queue/A
+2003-07-06 08:50:41,885 INFO  [org.jboss.mq.server.jmx.Queue.A] Started
+2003-07-06 08:50:41,885 INFO  [org.jboss.mq.server.jmx.Queue.B] Starting
+2003-07-06 08:50:41,889 INFO  [org.jboss.mq.server.jmx.Queue.B] Bound to JNDI name: queue/B
+2003-07-06 08:50:41,889 INFO  [org.jboss.mq.server.jmx.Queue.B] Started
+2003-07-06 08:50:41,890 INFO  [org.jboss.mq.server.jmx.Queue.C] Starting
+2003-07-06 08:50:41,894 INFO  [org.jboss.mq.server.jmx.Queue.C] Bound to JNDI name: queue/C
+2003-07-06 08:50:41,894 INFO  [org.jboss.mq.server.jmx.Queue.C] Started
+2003-07-06 08:50:41,894 INFO  [org.jboss.mq.server.jmx.Queue.D] Starting
+2003-07-06 08:50:41,898 INFO  [org.jboss.mq.server.jmx.Queue.D] Bound to JNDI name: queue/D
+2003-07-06 08:50:41,898 INFO  [org.jboss.mq.server.jmx.Queue.D] Started
+2003-07-06 08:50:41,899 INFO  [org.jboss.mq.server.jmx.Queue.ex] Starting
+2003-07-06 08:50:41,902 INFO  [org.jboss.mq.server.jmx.Queue.ex] Bound to JNDI name: queue/ex
+2003-07-06 08:50:41,903 INFO  [org.jboss.mq.server.jmx.Queue.ex] Started
+2003-07-06 08:50:41,903 INFO  [org.jboss.mq.security.SecurityManager] Starting
+2003-07-06 08:50:41,930 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Created securityMgr=org.jboss.security.plugins.JaasSecurityManager@2f996f
+2003-07-06 08:50:41,931 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] setCachePolicy, c=org.jboss.util.TimedCachePolicy@10278c5
+2003-07-06 08:50:41,931 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Added jbossmq, org.jboss.security.plugins.SecurityDomainContext@146df77 to map
+2003-07-06 08:50:41,944 INFO  [org.jboss.mq.security.SecurityManager] Started
+2003-07-06 08:50:41,944 INFO  [org.jboss.mq.server.jmx.Topic.testTopic] Starting
+2003-07-06 08:50:41,959 INFO  [org.jboss.mq.server.jmx.Topic.testTopic] Bound to JNDI name: topic/testTopic
+2003-07-06 08:50:41,992 INFO  [org.jboss.mq.server.jmx.Topic.testTopic] Started
+2003-07-06 08:50:41,993 INFO  [org.jboss.mq.server.jmx.Topic.securedTopic] Starting
+2003-07-06 08:50:41,994 INFO  [org.jboss.mq.server.jmx.Topic.securedTopic] Bound to JNDI name: topic/securedTopic
+2003-07-06 08:50:41,994 INFO  [org.jboss.mq.server.jmx.Topic.securedTopic] Started
+2003-07-06 08:50:41,994 INFO  [org.jboss.mq.server.jmx.Topic.testDurableTopic] Starting
+2003-07-06 08:50:41,995 INFO  [org.jboss.mq.server.jmx.Topic.testDurableTopic] Bound to JNDI name: topic/testDurableTopic
+2003-07-06 08:50:41,996 INFO  [org.jboss.mq.server.jmx.Topic.testDurableTopic] Started
+2003-07-06 08:50:41,996 INFO  [org.jboss.mq.server.jmx.Queue.testQueue] Starting
+2003-07-06 08:50:42,000 INFO  [org.jboss.mq.server.jmx.Queue.testQueue] Bound to JNDI name: queue/testQueue
+2003-07-06 08:50:42,000 INFO  [org.jboss.mq.server.jmx.Queue.testQueue] Started
+2003-07-06 08:50:42,001 INFO  [org.jboss.mq.server.jmx.InterceptorLoader] Starting
+2003-07-06 08:50:42,001 INFO  [org.jboss.mq.server.jmx.InterceptorLoader] Started
+2003-07-06 08:50:42,001 INFO  [org.jboss.mq.server.jmx.Invoker] Starting
+2003-07-06 08:50:42,002 INFO  [org.jboss.mq.server.jmx.Invoker] Started
+2003-07-06 08:50:42,002 INFO  [org.jboss.mq.il.http.HTTPServerILService] Starting
+2003-07-06 08:50:42,137 INFO  [org.jboss.mq.il.http.HTTPServerILService] Started
+2003-07-06 08:50:42,137 INFO  [org.jboss.mq.il.jvm.JVMServerILService] Starting
+2003-07-06 08:50:42,143 INFO  [org.jboss.mq.il.jvm.JVMServerILService] Started
+2003-07-06 08:50:42,144 INFO  [org.jboss.mq.il.rmi.RMIServerILService] Starting
+2003-07-06 08:50:42,253 INFO  [org.jboss.mq.il.rmi.RMIServerILService] Started
+2003-07-06 08:50:42,254 INFO  [org.jboss.mq.il.oil.OILServerILService] Starting
+2003-07-06 08:50:42,255 INFO  [org.jboss.mq.il.oil.OILServerILService] JBossMQ OIL service available at : 0.0.0.0/0.0.0.0:8090
+2003-07-06 08:50:42,281 INFO  [org.jboss.mq.il.oil.OILServerILService] Started
+2003-07-06 08:50:42,282 INFO  [org.jboss.mq.il.uil.UILServerILService] Starting
+2003-07-06 08:50:42,283 INFO  [org.jboss.mq.il.uil.UILServerILService] JBossMQ UIL service available at : 0.0.0.0/0.0.0.0:8091
+2003-07-06 08:50:42,307 INFO  [org.jboss.mq.il.uil.UILServerILService] Started
+2003-07-06 08:50:42,308 INFO  [org.jboss.mq.il.oil2.OIL2ServerILService] Starting
+2003-07-06 08:50:42,309 INFO  [org.jboss.mq.il.oil2.OIL2ServerILService] JBossMQ OIL2 service available at : 0.0.0.0/0.0.0.0:8092
+2003-07-06 08:50:42,340 INFO  [org.jboss.mq.il.oil2.OIL2ServerILService] Started
+2003-07-06 08:50:42,341 INFO  [org.jboss.mq.il.uil2.UILServerILService] Starting
+2003-07-06 08:50:42,341 INFO  [org.jboss.mq.il.uil2.UILServerILService] JBossMQ UIL service available at : 0.0.0.0/0.0.0.0:8093
+2003-07-06 08:50:42,429 INFO  [org.jboss.mq.il.uil2.UILServerILService] Started
+2003-07-06 08:50:42,430 INFO  [org.jboss.mq.server.jmx.Queue.DLQ] Starting
+2003-07-06 08:50:42,435 INFO  [org.jboss.mq.server.jmx.Queue.DLQ] Bound to JNDI name: queue/DLQ
+2003-07-06 08:50:42,435 INFO  [org.jboss.mq.server.jmx.Queue.DLQ] Started
+2003-07-06 08:50:42,436 INFO  [org.jboss.resource.connectionmanager.TxConnectionManager] Starting
+2003-07-06 08:50:42,459 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Created securityMgr=org.jboss.security.plugins.JaasSecurityManager@12b9f14
+2003-07-06 08:50:42,461 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] setCachePolicy, c=org.jboss.util.TimedCachePolicy@d8e902
+2003-07-06 08:50:42,461 INFO  [org.jboss.security.plugins.JaasSecurityManagerService] Added JmsXARealm, org.jboss.security.plugins.SecurityDomainContext@a99013 to map
+2003-07-06 08:50:42,469 INFO  [org.jboss.resource.adapter.jms.JmsManagedConnectionFactory.JmsXA] Bound connection factory for resource adapter for ConnectionManager 'jboss.jca:service=TxCM,name=JmsXA to JNDI name 'java:/JmsXA'
+2003-07-06 08:50:42,470 INFO  [org.jboss.resource.connectionmanager.TxConnectionManager] Started
+2003-07-06 08:50:42,482 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/transaction-service.xml
+2003-07-06 08:50:42,483 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/user-service.xml
+2003-07-06 08:50:42,527 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/user-service.xml
+2003-07-06 08:50:42,527 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/management/ejb-management.jar
+2003-07-06 08:50:43,360 INFO  [org.jboss.ejb.EjbModule] Creating
+2003-07-06 08:50:43,373 INFO  [org.jboss.ejb.EjbModule] Deploying MEJB
+2003-07-06 08:50:43,484 INFO  [org.jboss.ejb.StatelessSessionContainer] Creating
+2003-07-06 08:50:43,494 INFO  [org.jboss.ejb.plugins.StatelessSessionInstancePool] Creating
+2003-07-06 08:50:43,494 INFO  [org.jboss.ejb.plugins.StatelessSessionInstancePool] Created
+2003-07-06 08:50:43,517 INFO  [org.jboss.ejb.StatelessSessionContainer] Created
+2003-07-06 08:50:43,518 INFO  [org.jboss.ejb.EjbModule] Created
+2003-07-06 08:50:43,519 INFO  [org.jboss.ejb.EjbModule] Starting
+2003-07-06 08:50:43,519 INFO  [org.jboss.ejb.StatelessSessionContainer] Starting
+2003-07-06 08:50:43,566 INFO  [org.jboss.ejb.plugins.StatelessSessionInstancePool] Starting
+2003-07-06 08:50:43,566 INFO  [org.jboss.ejb.plugins.StatelessSessionInstancePool] Started
+2003-07-06 08:50:43,567 INFO  [org.jboss.ejb.StatelessSessionContainer] Started
+2003-07-06 08:50:43,567 INFO  [org.jboss.ejb.EjbModule] Started
+2003-07-06 08:50:43,567 INFO  [org.jboss.ejb.EJBDeployer] Deployed: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/management/ejb-management.jar
+2003-07-06 08:50:43,589 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/management/ejb-management.jar
+2003-07-06 08:50:43,590 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-console.war/
+2003-07-06 08:50:43,771 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] deploy, ctxPath=/jmx-console, warUrl=file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-console.war/
+2003-07-06 08:50:43,791 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/jmx-console]: Deploying class repositories to work directory /opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/work/MainEngine/localhost/jmx-console
+2003-07-06 08:50:43,792 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/jmx-console]: Deploy class files /WEB-INF/classes to /opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-console.war/WEB-INF/classes
+2003-07-06 08:50:43,797 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/jmx-console]: Deploy JAR /WEB-INF/lib/jboss-jmx.jar to /opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-console.war/WEB-INF/lib/jboss-jmx.jar
+2003-07-06 08:50:44,285 INFO  [org.jboss.web.localhost.Engine] ContextConfig[/jmx-console]: Added certificates -> request attribute Valve
+2003-07-06 08:50:44,377 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] Using Java2 parent classloader delegation: true
+2003-07-06 08:50:44,377 INFO  [org.jboss.web.localhost.Engine] StandardManager[/jmx-console]: Seeding random number generator class java.security.SecureRandom
+2003-07-06 08:50:44,378 INFO  [org.jboss.web.localhost.Engine] StandardManager[/jmx-console]: Seeding of random number generator has been completed
+2003-07-06 08:50:44,380 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/jmx-console:default]: Loading container servlet default
+2003-07-06 08:50:44,380 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/jmx-console:invoker]: Loading container servlet invoker
+2003-07-06 08:50:44,391 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/jmx-console.war/
+2003-07-06 08:50:44,392 INFO  [org.jboss.deployment.MainDeployer] Starting deployment of package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/management/web-console.war
+2003-07-06 08:50:44,853 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] deploy, ctxPath=/web-console, warUrl=file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/management/web-console.war/54.web-console.war
+2003-07-06 08:50:44,897 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/web-console]: Deploying class repositories to work directory /opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/work/MainEngine/localhost/web-console
+2003-07-06 08:50:44,902 INFO  [org.jboss.web.localhost.Engine] WebappLoader[/web-console]: Deploy class files /WEB-INF/classes to /opt/jboss-3.2.1_tomcat-4.1.24/server/all/tmp/deploy/server/all/deploy/work/MainEngine/localhost/web-console/WEB-INF/classes
+2003-07-06 08:50:45,378 INFO  [org.jboss.web.localhost.Engine] ContextConfig[/web-console]: Added certificates -> request attribute Valve
+2003-07-06 08:50:45,452 INFO  [org.jboss.web.catalina.EmbeddedCatalinaService41] Using Java2 parent classloader delegation: true
+2003-07-06 08:50:45,452 INFO  [org.jboss.web.localhost.Engine] StandardManager[/web-console]: Seeding random number generator class java.security.SecureRandom
+2003-07-06 08:50:45,453 INFO  [org.jboss.web.localhost.Engine] StandardManager[/web-console]: Seeding of random number generator has been completed
+2003-07-06 08:50:46,127 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/web-console:default]: Loading container servlet default
+2003-07-06 08:50:46,300 INFO  [org.jboss.web.localhost.Engine] StandardWrapper[/web-console:invoker]: Loading container servlet invoker
+2003-07-06 08:50:46,312 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/deploy/management/web-console.war
+2003-07-06 08:50:46,331 INFO  [org.jboss.deployment.scanner.URLDeploymentScanner] Started
+2003-07-06 08:50:46,368 INFO  [org.jboss.deployment.MainDeployer] Deployed package: file:/opt/jboss-3.2.1_tomcat-4.1.24/server/all/conf/jboss-service.xml
+2003-07-06 08:50:46,371 INFO  [org.jboss.system.server.Server] JBoss (MX MicroKernel) [3.2.1 (build: CVSTag=JBoss_3_2_1 date=200305041533)] Started in 36s:257ms

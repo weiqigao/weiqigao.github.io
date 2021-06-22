@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>St. Louis Java Group, Meetings, Schedules, Programming, Code</title>
+	<link rel="stylesheet" type="text/css" href="../../java.css">
+</head>
+
+<body bottommargin="0" marginheight="0" topmargin="0" leftmargin="0" marginwidth="0">
+
+<table width="100%" bgcolor="#e1e0d5" cellspacing="4" cellpadding="2" border="0">
+<tr>
+    <td class="bodytitle_java"><img src="images/spacer.gif" alt="" width="10" height="1" border="0">June, 2000</td>
+</tr>
+<tr bgcolor="#ffffff">
+    <td><img src="images/spacer.gif" alt="" width="1" height="2" border="0"></td>
+</tr>
+</table>
+<!--Page header ends------>
+<script language=JavaScript" src="includes/beforecontentspacer.js" type="text/javascript"></script>
+<table width="750" cellspacing="2" cellpadding="2" border="0">
+<tr>
+    <td width="5"><img src="images/spacer.gif" alt="" width="1" height="2" border="0"></td>
+    <td height="400" valign="top">
+<!---------Place content below this line---------------------------------------->
+<table widt="750" cellpadding="2" cellspacing="2" border="0" class="body">
+<tr>
+<td>
+ <!------------------------- PRESENTATION -->
+<P>
+This article is also published here:
+<A href="http://dev-gamelan.earthweb.com/journal/techworkshop/051600_stockperf.html">
+gamelan.earthweb.com</a>
+<P>
+<B><FONT SIZE="+1">Charting 5 year stock performance</B></FONT><br>
+
+<P>
+<I>by Sharath Sahadevan</I>
+<P>                       
+
+This article describes how to chart five-year historical performance of stocks. The compare_perf class can be used to compare the performance of two stocks. This class evolved from the download_hist class detailed in my <a href="http://www.gamelan.com/journal/techworkshop/031400_stock.html">earlier article</a>.  The download_hist class just downloads the historical 5 year stock performance to the desktop for one stock. The <a href="compare_perf.java">compare_perf</a> class downloads the information for two stocks and will chart their performance. This will help the user visually compare the stock performance. 
+
+<h4>Downloading stock performance info from the net:</h4>
+
+   A good description of how to download historical information from the net is found at the link mentioned above which describes a class called download_hist. The compare_perf class uses the same mechanism to get its information. The compare_perf class can accept more than one ticker symbol on the command line. A for loop is used as shown below to download information for each ticker on the command line.
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+for ( arg_count = 0 ; arg_count < args.length ; arg_count++ )
+  {
+    // Download info from the net .
+           ...
+    ...
+    change_string(strbuf , TickerSymbol ) ;
+  }
+</pre>
+
+<p>
+Note the call to the change_string function. This function is called for each ticker symbol entered on the command line.
+
+<h4>The line_array:</h4>
+
+    The change_string function builds the line_array. The strbuf variable passed to the change_string method has all the lines downloaded for one ticker symbol as shown below.
+<p>
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+Week of, Open, High, Low, Close, Volume
+17-Jan-0,100.2969,105.75,99.875,100.0625,36917100
+10-Jan-0,85.75,106.625,84.125,103.0625,59506200
+3-Jan- 0,83.2656,87.375,77.375,82,24701600
+                       ..
+30-Jan-95,8.8713,9.2455,8.7154,9.1676,6487400
+23-Jan-95,8.5283,8.9181,8.4816,8.8557,5790200
+16-Jan-95,8.5439,8.809,8.4504,8.5829,6431200
+</pre>
+<p>
+Each line shown in the strbuf variable is broken into tokens separated by the ',' delimiter. While processing the line
+<p>
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+   17-Jan-0,100.2969,105.75,99.875,100.0625,36917100
+</pre>
+
+curr_line.substring( 0,(pos1 -1 ) ) would have the value 17-Jan-0, which is the date .
+<p>
+An array of lines is built using the Line  class and stored in the line_array variable. 
+<p>
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+// 0 to pos1 -1 because we do not want the comma
+line_array[ array_count ] = new Line(
+                TickerSymbol ,
+                curr_line.substring( 0,(pos1 -1 ) ),
+                curr_line.substring( pos1,(pos2 - 1) ),
+                curr_line.substring( pos2,(pos3-1 ) ),
+                curr_line.substring( pos3,(pos4-1)),
+                curr_line.substring( pos4,(pos5-1)),
+                curr_line.substring( pos5,length)
+                  ) ;
+
+array_count++ ;
+</pre>
+
+<p>
+The Line class is very useful because it makes retrieving portions of the line very easy. if we want the close value then we call the getClose() method. These methods are used  in the chartit class that is described in a section below.  The following line shows how the getDate() method of the Line class is used in the paint method of the chartit class. 
+
+<h4>The chartit class:</h4>
+
+   After we download the information and build the line_array we call the chartit class as shown below. We pass the line_array to the chartit class .
+<p> 
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+for ( arg_count = 0 ; arg_count < args.length ; arg_count++ )
+  {
+     // Download info from the net .
+            ...
+     ...
+     change_string(strbuf , TickerSymbol ) ;
+  }
+
+chartit app = new chartit( line_array );
+
+ app.addWindowListener(
+    new WindowAdapter() {
+       public void windowClosing( WindowEvent e )
+       {
+          System.exit( 0 );
+       }
+   }
+);
+</pre>
+
+<p>
+The chartit class extends a  JFrame. This class will traverse the line_array by using the current line variable. Assume we ran compare_perf with the parameters  intc and rmbs as shown below.
+<p>
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+                    java compare_perf intc rmbs
+</pre>
+
+<p>
+What does the line_array look like at this point ?  The line array will have all the rows downloaded for intc followed by all the rows for rmbs as shown below.
+<p> 
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+ 0:   intc, 17-Jan-0,100.2969,105.75,99.875,100.0625,36917100
+ 1:   intc, 10-Jan-0,85.75,106.625,84.125,103.0625,59506200
+ 2:   intc, 3-Jan- 0,83.2656,87.375,77.375,82,24701600
+                       ..
+ n-2:   intc,30-Jan-95,8.8713,9.2455,8.7154,9.1676,6487400
+ n-1:  intc, 23-Jan-95,8.5283,8.9181,8.4816,8.8557,5790200
+ n:      intc,16-Jan-95,8.5439,8.809,8.4504,8.5829,6431200
+ n+1:  rmbs,17-Jan-00,88.25,88.25,75,75.375,1719500
+ n+2:  rmbs,10-Jan-00,87,91.875,82.125,89.625,1442800
+ n+3:  rmbs, 3-Jan-00,70,94.375,67.4375,85.125,1742500
+ n+4:  rmbs, 27-Dec-99,68.50,69.25,67,67.4375,645000
+                   ....
+ m-1:  rmbs, 19-May-97,30.50,31.25,29.75,30.75,225600
+ m:     rmbs,12-May-97,32.125,32.50,29.50,31.75,969300
+</pre>
+
+<p>
+The integers 0 through m above indicate the index into the array.
+<p>
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+line_array[0].getTicker() will return intc .
+line_array[0].getDate() will return 17-Jan-0
+line_array[m].getOpen() will return 32.125 .
+line_array[m].getHigh() will return  32.50 .
+line_array[m].getLow() will return  29.50 .
+line_array[m].getClose() will return 31.75  .
+line_array[m].getVol() will return 969300 .
+</pre>
+
+<p>
+
+The chartit class will determine the following variables by traversing the line_array. These variables are used in the paint method to draw the graph.
+<p>
+<b>max_rows_for_ticker</b> - This will indicate the  maximum number of rows for one ticker symbol. This variable was necessary  because of the fact that not all stocks will have a five-year history. In the above example max_rows_for_ticker will be n because ( n -0 ) is greater that (m-n) .
+<p>
+<b>start_index_for_x_axis</b> - This will indicate the start index in line_array for the ticker that has the maximum number of rows. In our example the start_index_for_x_axis will be 0.
+<p>
+<b>max_close</b> - This value will indicate the maximum close for all the ticker symbols entered. This is needed so we can determine the scale for the Y-axis. Here is the section of code that determines the max_close . Note how we convert the string returned by the getClose method to Double.
+<p>
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+if ( current_line.getClose() != null )
+       curr_close =
+        (int ) Double.parseDouble( current_line.getClose() ) ;
+   else
+         break ;     // Break out of the loop.
+    }
+catch ( NumberFormatException nfe )
+   {
+       System.out.println( nfe.toString() ) ;
+   }
+price_array[array_index] = curr_close ;
+if ( curr_close > max_close )
+{
+ max_close = curr_close ;
+}
+</pre>
+
+<p>
+The paint method of the chartit class:
+<p>
+The paint method of the chartit class will be called when it has to be displayed. This method will also be called when the screen is refreshed. Drawing the X/Y axis is simple as shown below.
+<p>
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+      g.setColor( Color.black );
+      g.drawLine( x_min, y_max, x_max , y_max );
+
+      g.setColor( Color.black );
+      g.drawLine( x_min, y_min, x_min , y_max );
+</pre>
+
+<p>
+The values x_min, x_max, y_min, y_max are assigned fixed values. The Y-axis displays the close in Dollars . Getting the correct values displayed on the Y-axis was a little more complicated and is done as shown below. We display 10 values on the Y-axis in increments of max_close/10. 
+
+<p><b><a href="051600_listing1.html">Listing 1.</a> Getting the correct values displayed on the Y-axis.</b></p>
+
+The X-axis will display the date .Adding values for  the X-axis is further complicated by the fact that each ticker might not have a five year history. We use the date indicated by paint_array_count index .  We display five dates on the X-axis.
+
+<p><b><a href="051600_listing2.html">Listing 2.</a> Displaying dates on the X-axis.</b></p>
+
+Now we move on to drawing the chart itself. We use the color red for the first ticker. For the others random color generation is used. One disadvantage with using random color generation is that if we move the chart then the color of the second graph changes because the paint method gets called again. The drawline method is used to draw the graph as shown below.
+<p>
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+    g.drawLine( prev_x, prev_y , curr_x , curr_y );
+</pre>
+
+<p>
+
+<h4>Conclusion:</h4>
+
+  compare_perf demonstrates the how to write a charting application in java . compare_perf is useful for comparing the five year historical stock performance of companies . This class works best when  two ticker symbols are entered. The data used for charting is retrieved from yahoo's web site and is written to files on the desktop.
+
+<h4>To compile:</h4>
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+javac compare_perf.java
+</pre>
+
+<h4>To run:</h4>
+
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+java compare_perf intc csco
+</pre>
+<h4>Files created:</h4> 
+<pre style="font-size: 11px;font-family: arial, helvetica, geneva;">
+                 C:\Stocks\Stock Data\intc.csv
+                 C:\Stocks\Stock Data\intc_old.csv
+                 C:\Stocks\Stock Data\csco.csv
+                 C:\Stocks\Stock Data\csco_old.csv
+</pre>
+
+<p>
+Note: If the directories C:\Stocks\Stock Data\ do not exist 
+      they will be created by the application.
+<hr>
+
+      <!------------------------- Presentation -->
+<br>
+Send comments to <A href="mailto:javasig@ociweb.com">javasig@ociweb.com</A>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

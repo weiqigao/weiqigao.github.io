@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<script language="JavaScript">
+
+<!-- hide from JavaScript-challenged browsers
+function openWindow1() {  popupWin = window.open('/url/', 'Figure1',
+'scrollbars,resizable,width=550,height=480')
+}
+// done hiding -->
+
+</script>
+<TITLE>Listing 2</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#cccccc"
+LINK="#ffffff" VLINK="#ffffff" ALINK="#ffffff">
+<TABLE CELLSPACING="0" CELLPADDING="5" WIDTH=600 border=0>
+      <TR ALIGN=LEFT VALIGN=TOP>
+<TD ROWSPAN="2" BGCOLOR="#006294">&nbsp;</TD>
+      <TD valign=top BGCOLOR="006294" nowrap><FONT FACE="Arial"
+      SIZE="+1">Displaying dates on the X-axis</FONT><BR>
+<FONT SIZE=2 FACE="ARIAL" color="#ffffff"><B></b></font> <BR><FONT SIZE=2
+FACE="ARIAL" color="#ffffff"><i>by Sharath Sahadevan</i></font><P></td>
+
+<td valign=top align=right bgcolor="#006294">&nbsp;</td></TR>
+<TR><TD BGCOLOR="dddddd" colspan=2><font color="000000">
+
+<pre><code>
+// Add Values on X-AXIS 
+      curr_y = y_max ;
+      paint_array_count = 0 ;
+      for (count = 0 ; count < 5 ; count++ )
+      {
+    
+      curr_x =   x_max - ((x_length / 5) * count ) ;
+     // paint_array_count  = count * (max_rows_for_ticker / 5) ;
+        paint_array_count  = start_index_for_x_axis +
+                             ( count *  max_rows_for_ticker / 5 ) ;
+                            
+     // System.out.println("curr_x: "  + curr_x
+     //                   +" curr_y:" +  curr_y ) ;
+
+      
+      g.drawString( "|" , curr_x , curr_y );
+      g.drawString(  temp_line_array[paint_array_count].getDate()  , curr_x-10 , curr_y+15 );
+
+      }
+</pre>
+
+</code></pre>
+</TD></TR>
+
+
+</TABLE>
+
+</BODY>
+</HTML>
+

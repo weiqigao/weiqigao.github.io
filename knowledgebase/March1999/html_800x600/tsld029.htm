@@ -1,0 +1,87 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>ObjectClientI Interface</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>ObjectClientI Interface</H1> 
+ <P><UL>
+<H2>package com.ociweb.applet2servlet;
+</H2>
+<BR></UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>import java.io.IOException;
+</H2>
+</UL><UL>
+<H2>import java.io.Serializable;
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>/**
+</H2>
+</UL><UL>
+<H2> * An Applet may use this interface to communicate with a Servlet.
+</H2>
+</UL><UL>
+<H2> * This protocol allows one object to be sent and one object to 
+</H2>
+</UL><UL>
+<H2> * be returned per connection.
+</H2>
+</UL><UL>
+<H2> * @author Eric M. Burke, Object Computing, Inc.
+</H2>
+</UL><UL>
+<H2> */
+</H2>
+</UL><UL>
+<H2>public interface ObjectClientI {
+</H2>
+</UL><UL>
+<H2>    /**
+</H2>
+</UL><UL>
+<H2>     * @param obj the object to send to the Servlet.
+</H2>
+</UL><UL>
+<H2>     * @return the result object from the Servlet.
+</H2>
+</UL><UL>
+<H2>     * @throws IOException if anything went wrong with the connection.
+</H2>
+</UL><UL>
+<H2>     */
+</H2>
+</UL><UL>
+<H2>    Serializable write(Serializable obj) throws IOException,
+</H2>
+</UL><UL>
+<H2>            ClassNotFoundException;
+</H2>
+</UL><UL>
+<H2>}</H2>
+</UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld028.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld030.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld029.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

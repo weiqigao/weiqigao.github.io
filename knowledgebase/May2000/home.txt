@@ -1,0 +1,45 @@
+<!-- S Frag #templ1# -->
+<!-- S Frag #templHomeLogo# -->
+<!-- S Frag #templ2# -->
+
+<!-- S Frag #templEnrollNav# -->
+<!-- S Frag #templProfileNav# -->
+<!-- S Frag #templClaimNav# -->
+<!-- S Frag #templRedeemNav# -->
+<!-- S Frag #templReportsNav# -->
+
+<!-- S Frag #templ3# -->
+<!-- S Frag #templRYNav# -->
+<!-- S Frag #templ4# -->
+
+<!-- S Frag #templHomeText# -->
+
+<font face="verdana" color="#c01111" size="4">
+  &nbsp; Welcome to Star Rewards!
+</font>
+<p>
+
+<table border="0">
+<tr>
+<td>&nbsp;</td>
+<td>
+<font face="verdana" size="3" color="blue">
+Welcome to the American Circuits, Inc. Star Rewards website!
+Star Rewards will reward you, an Authorized Dealer Sales Manager
+or Sales Rep, with valuable points for selling eligible American
+Circuits electronic products. You'll have the opportunity to
+spend your hard-earned points at any of over 14 million locations
+worldwide that accept MasterCard<font size="1">&#169</font>!
+<p>
+Conduct your Star Rewards business via the website and you will be
+eligible to win a fantastic trip for two as a top performer, all
+while earning valuable points to purchase that special something.
+Watch the web for hints on our first exotic destination.
+</font>
+</td>
+</tr>
+</table>
+
+<!-- S Frag #templ5# -->
+<!-- S Frag #templAddInfo# -->
+<!-- S Frag #templ6# -->

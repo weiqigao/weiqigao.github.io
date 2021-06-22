@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>St. Louis Java Group, Meetings, Schedules, Programming, Code</title>
+	<link rel="stylesheet" type="text/css" href="../../java.css">
+</head>
+
+<body bottommargin="0" marginheight="0" topmargin="0" leftmargin="0" marginwidth="0">
+
+<table width="100%" bgcolor="#e1e0d5" cellspacing="4" cellpadding="2" border="0">
+<tr>
+    <td class="bodytitle_java"><img src="images/spacer.gif" alt="" width="10" height="1" border="0">January 11, 2001</td>
+</tr>
+<tr bgcolor="#ffffff">
+    <td><img src="images/spacer.gif" alt="" width="1" height="2" border="0"></td>
+</tr>
+</table>
+<!--Page header ends------>
+<script language=JavaScript" src="includes/beforecontentspacer.js" type="text/javascript"></script>
+<table width="750" cellspacing="2" cellpadding="2" border="0">
+<tr>
+    <td width="5"><img src="images/spacer.gif" alt="" width="1" height="2" border="0"></td>
+    <td height="400" valign="top">
+<!---------Place content below this line---------------------------------------->
+<table widt="750" cellpadding="2" cellspacing="2" border="0" class="body">
+<tr>
+<td>
+ <!------------------------- Presentation -->
+<p class="bodysubtitle_java">Introduction to Log4J</p>
+<p><b>By Brent Twenter</b></p>
+<P>
+The Log4j topic is worthy of discussion for the following reasons:
+<P>
+1.  Its an essential tool for any developer regardless of whether they do Java Applets/Applications/Distributed
+Applications(EJB/Servlets).  Every developer will face the issue of logging at sometime or another.  Logging is a standard piece
+of application infrastructure.
+<P> 
+2.  Its a timely issue.  An article about log4j has just appeared in Java World
+(http://www.javaworld.com/javaworld/jw-11-2000/jw-1122-log4j.html).  
+<P> 
+3.  Promotes standardization.  Being in the consulting field, I am sure you have noticed that every company seems to have their
+own solution for logging.  I have worked at SBC, AG Edwards, US-RX, and Heybridge.  Each of these organizations has a
+different approach to logging.  Generally, through their own custom logging code.  Log4j makes an attempt at standardizing
+how log files are generated.  Its designed to help developers debug code in both test and production environments.  Very few
+times will a custom solution outperform one created by a community of Java Developers.  
+<P> 
+4.  Even if developers that attend the JUG decide that Log4J isn't for them, it will give them a greater sense of what is out there
+and available.  Some of the design methodology used by Log4J might be transferable to their own custom logging solution.
+</P><P>
+Introduction (direct from www.log4j.org).
+</P><P>
+Inserting log statements into your code is a low-tech
+method for debugging it. It may also be the only way
+because debuggers are not always available or applicable.
+This is often the case for distributed applications.
+</P><P>
+On the other hand, some people argue that log statements
+pollute source code and decrease legibility. (We believe
+that the contrary is true). In the Java language where a
+pre-processor is not available, log statements increase the
+size of the code and reduce its speed, even when logging is
+turned off. Given that a reasonably sized application may
+contain thousands of log statements, speed is of particular
+importance.
+</P><P>
+With log4j it is possible to enable logging at runtime
+without modifying the application binary. The log4j package
+is designed so that these statements can remain in shipped
+code without incurring a heavy performance cost. Logging
+behavior can be controlled by editing a configuration file,
+without touching the application binary.
+</P><P>
+Logging equips the developer with detailed context for
+application failures. On the other hand, testing provides
+quality assurance and confidence in the application.
+Logging and testing should not be confused. They are
+complementary. When logging is wisely used, it can prove to
+be an essential tool.
+</P><P>
+One of the distinctive features of log4j is the notion of
+inheritance in categories. Using a category hierarchy it is
+possible to control which log statements are output at
+arbitrarily fine granularity but also great ease. This
+helps reduce the volume of logged output and minimize the
+cost of logging.
+</P><P>
+The target of the log output can be a file, an
+OutputStream, a java.io.Writer, a remote log4j server, a
+remote Unix Syslog daemon or even a NT Event logger.
+</P><P>
+
+Presentation Material: <A href="Log4J.ppt">log4j presentation (powerpoint)</a>
+
+<hr>
+      <!------------------------- Presentation -->
+<br>
+Send comments to <A href="mailto:javasig@ociweb.com">javasig@ociweb.com</A>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

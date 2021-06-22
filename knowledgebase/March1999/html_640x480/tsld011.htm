@@ -1,0 +1,44 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>The Servlet Sandbox</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>The Servlet Sandbox</H1> 
+ <P><UL>
+<LI><H2>Servlets are either trusted or untrusted
+</H2>
+<UL>
+<LI>a trusted Servlet has unrestricted access to web server resources
+<LI>an untrusted Servlet is limited by a SecurityManager object
+<UL>
+<LI>java.lang.SecurityManager limits access to many actions
+<UL>
+<LI>reading and writing files, establishing network connections, starting processes, etc.
+<LI>this is the same approach that Applets use
+<LI>different web servers will implement this differently, allowing different degrees of control
+</UL><LI>locally installed Servlets typically have fewer restrictions
+<LI>a “remote” Servlet is one that is not installed on the web server machine
+<UL>
+<LI>a more restrictive SecurityManager is typically used
+<LI>digital certificates can be used to create signed Servlets, just like signed Applets</UL></UL></UL></UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld010.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld012.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld011.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

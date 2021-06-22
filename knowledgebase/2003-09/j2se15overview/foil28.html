@@ -1,0 +1,13 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Typesafe Collections (Cont'd)</title><link type="text/css" rel="stylesheet" href="browser/slides.css"><link rel="contents" href="toc.html" title="J2SE 1.5 Overview"><link rel="top" href="index.html" title="J2SE 1.5 Overview"><link rel="up" href="foilgrp08.html" title="Parameterized Types / Generics"><link rel="previous" href="foil27.html" title="Typesafe Collections"><link rel="next" href="foil29.html" title="Typesafe Collections and Enhanced For Loop"><script language="JavaScript1.2" type="text/javascript"> </script><script type="text/javascript" language="JavaScript1.2" src="browser/ua.js"> </script><script type="text/javascript" language="JavaScript" src="browser/xbDOM.js"> </script><script type="text/javascript" language="JavaScript1.2" src="browser/xbStyle.js"> </script><script type="text/javascript" language="JavaScript1.2" src="browser/xbCollapsibleLists.js"> </script><script type="text/javascript" language="JavaScript" src="browser/slides.js"> </script></head><body class="foil" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF" onkeypress="navigate(event)"><div class="foil"><a name="d0e501"></a><div class="navhead"><table width="100%" border="0" cellpadding="0" cellspacing="0" summary="Navigation"><tr><td align="left" width="10%"><a href="foil27.html"><img alt="Prev" border="0" src="graphics/active/nav-prev.png"></a></td><td align="center" width="80%"><span class="navheader">J2SE 1.5 Overview</span></td><td align="right" width="10%"><a href="foil29.html"><img alt="Next" border="0" src="graphics/active/nav-next.png"></a></td></tr></table><hr class="top-nav-sep"></div><div class="foil-body"><h1 class="title">Typesafe Collections (Cont'd)</h1><div class="itemizedlist"><ul type="disc"><li><p>A typed Iterator may also be used</p><pre class="programlisting">List&lt;String&gt; driverNamesList = new ArrayList&lt;String&gt;();
+
+driverNamesList.add("Castroneves");
+driverNamesList.add("DeFerran");
+driverNamesList.add("Hornish Jr.");
+
+Iterator&lt;String&gt; it = driverNamesList.iterator();
+while (it.hasNext()) {
+    String driverName = it.next();
+    System.out.println(driverName);
+}</pre></li></ul></div></div><div id="overlayDiv" style="padding-top: 2in;"><div class="navfoot"><hr class="bottom-nav-sep"><table width="100%" border="0" cellpadding="0" cellspacing="0" summary="Navigation"><tr><td align="left" width="80%" valign="top"><span class="navfooter"><span class="copyright">Copyright &copy; 2003 Jeff Brown</span></span></td><td align="right" width="20%" valign="top"><span class="index">36</span>&nbsp;</td></tr></table></div></div></div></body></html>

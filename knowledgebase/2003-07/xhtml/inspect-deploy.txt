@@ -1,0 +1,30 @@
+$ cd /opt/jboss-3.2.1_tomcat-4.1.24/server
+$ ls all/deploy
+cache-invalidation-service.xml  jmx-console.war
+cluster-service.xml             jmx-ejb-connector-server.sar
+farm-service.xml                jmx-invoker-adaptor-server.sar
+hsqldb-ds.xml                   jmx-rmi-adaptor.sar
+http-invoker.sar                mail-service.xml
+iiop-service.xml                management
+jbossha-httpsession.sar         properties-service.xml
+jboss-jca.sar                   schedule-manager-service.xml
+jboss-local-jdbc.rar            scheduler-service.xml
+jboss-net.sar                   sqlexception-service.xml
+jbossweb-tomcat.sar             transaction-service.xml
+jboss-xa-jdbc.rar               user-service.xml
+jms                             uuid-key-generator.sar
+$ ls default/deploy
+cache-invalidation-service.xml  jmx-rmi-adaptor.sar
+hsqldb-ds.xml                   mail-service.xml
+http-invoker.sar                management
+jboss-jca.sar                   properties-service.xml
+jboss-local-jdbc.rar            schedule-manager-service.xml
+jbossweb-tomcat.sar             scheduler-service.xml
+jboss-xa-jdbc.rar               sqlexception-service.xml
+jms                             transaction-service.xml
+jmx-console.war                 user-service.xml
+jmx-ejb-connector-server.sar    uuid-key-generator.sar
+jmx-invoker-adaptor-server.sar
+$ ls minimal/deploy
+user-service.xml
+

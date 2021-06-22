@@ -1,0 +1,90 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>ObjectClient Class (Cont’d)</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>ObjectClient Class (Cont’d)</H1> 
+ <P><UL>
+<H2>    /**
+</H2>
+<BR></UL><UL>
+<H2>     * @param obj the object to send to the Servlet.
+</H2>
+</UL><UL>
+<H2>     * @return the result object from the Servlet.
+</H2>
+</UL><UL>
+<H2>     */
+</H2>
+</UL><UL>
+<H2>    public Serializable write(Serializable obj) throws IOException,
+</H2>
+</UL><UL>
+<H2>    ClassNotFoundException {
+</H2>
+</UL><UL>
+<H2>       URLConnection conn = serverURL.openConnection();
+</H2>
+</UL><UL>
+<H2>       conn.setDoOutput(true);   // allow writing to the connection
+</H2>
+</UL><UL>
+<H2>       conn.setUseCaches(false); // disable cache
+</H2>
+</UL><UL>
+<H2>       conn.setRequestProperty("Content-Type",
+</H2>
+</UL><UL>
+<H2>               "java-internal/" + obj.getClass().getName());
+</H2>
+</UL><UL>
+<H2>    
+</H2>
+</UL><UL>
+<H2>       ObjectOutputStream oos = new ObjectOutputStream(
+</H2>
+</UL><UL>
+<H2>               conn.getOutputStream());
+</H2>
+</UL><UL>
+<H2>       try {
+</H2>
+</UL><UL>
+<H2>           oos.writeObject(obj);
+</H2>
+</UL><UL>
+<H2>       } finally {
+</H2>
+</UL><UL>
+<H2>           if (oos != null) {
+</H2>
+</UL><UL>
+<H2>               oos.close();
+</H2>
+</UL><UL>
+<H2>           }
+</H2>
+</UL><UL>
+<H2>       }       </H2>
+</UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld030.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld032.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld031.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

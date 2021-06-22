@@ -1,0 +1,18 @@
+$ cd /opt/jboss-3.2.1_tomcat-4.1.24/client
+$ ls
+auth.conf                jbossmq-client.jar
+cacerts                  jbossmqha.jar
+concurrent.jar           jboss-net-client.jar
+getopt.jar               jbosssx-client.jar
+gnu-regexp.jar           jboss-system-client.jar
+jacorb.jar               jboss-transaction-client.jar
+jbossall-client.jar      jcert.jar
+jboss-client.jar         jmx-connector-client-factory.jar
+jboss-common-client.jar  jmx-ejb-connector-client.jar
+jbossha-client.jar       jmx-invoker-adaptor-client.jar
+jboss-iiop-client.jar    jmx-rmi-connector-client.jar
+jboss-j2ee.jar           jnet.jar
+jboss-jaas.jar           jnp-client.jar
+jbossjmx-ant.jar         jsse.jar
+jboss-jsr77-client.jar   log4j.jar
+

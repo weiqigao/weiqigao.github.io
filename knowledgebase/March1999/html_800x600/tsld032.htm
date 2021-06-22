@@ -1,0 +1,66 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>ObjectClient Class (Cont’d)</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>ObjectClient Class (Cont’d)</H1> 
+ <P><UL>
+<H2>       // return the response to the client
+</H2>
+<BR></UL><UL>
+<H2>       ObjectInputStream ois = new ObjectInputStream(
+</H2>
+</UL><UL>
+<H2>               conn.getInputStream());
+</H2>
+</UL><UL>
+<H2>       try {
+</H2>
+</UL><UL>
+<H2>           // readObject() may throw a ClassNotFoundException
+</H2>
+</UL><UL>
+<H2>           return (Serializable) ois.readObject();
+</H2>
+</UL><UL>
+<H2>       } finally {
+</H2>
+</UL><UL>
+<H2>           if (ois != null) {
+</H2>
+</UL><UL>
+<H2>               ois.close();
+</H2>
+</UL><UL>
+<H2>           }
+</H2>
+</UL><UL>
+<H2>       }
+</H2>
+</UL><UL>
+<H2>    }
+</H2>
+</UL><UL>
+<H2>}</H2>
+</UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld031.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld033.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld032.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

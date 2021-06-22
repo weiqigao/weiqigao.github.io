@@ -1,0 +1,14 @@
+$ cd /opt/jboss-3.2.1_tomcat-4.1.24
+$ find -maxdepth 2 -type d
+.
+./bin
+./client
+./docs
+./docs/dtd
+./docs/examples
+./docs/tests
+./lib
+./server
+./server/all
+./server/default
+./server/minimal

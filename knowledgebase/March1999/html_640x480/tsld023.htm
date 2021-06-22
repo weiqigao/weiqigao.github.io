@@ -1,0 +1,69 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Session Example</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>Session Example</H1> 
+ <P><UL>
+<H2>protected void doGet(HttpServletRequest req, HttpServletResponse res)
+</H2>
+<BR></UL><UL>
+<H2>throws ServletException, IOException {
+</H2>
+</UL><UL>
+<H2>    // “true” causes a new session to be created if needed
+</H2>
+</UL><UL>
+<H2>    HttpSession session = req.getSession(true);
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>    // require the user to logon before they can access this Servlet.
+</H2>
+</UL><UL>
+<H2>    // In this example, the String “authentication” is put into the
+</H2>
+</UL><UL>
+<H2>    // Session by a Logon page
+</H2>
+</UL><UL>
+<H2>    if (session.getValue(“authentication”) == null) {
+</H2>
+</UL><UL>
+<H2>        res.sendRedirect(logonURL);
+</H2>
+</UL><UL>
+<H2>    } else {
+</H2>
+</UL><UL>
+<H2>        // normal processing here
+</H2>
+</UL><UL>
+<H2>    }
+</H2>
+</UL><UL>
+<H2>}</H2>
+</UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld022.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld024.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld023.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

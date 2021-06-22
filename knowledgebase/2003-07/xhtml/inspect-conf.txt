@@ -1,0 +1,13 @@
+$ cd /opt/jboss-3.2.1_tomcat-4.1.24/server
+$ ls all/conf
+jacorb.properties  jndi.properties   standardjaws.xml
+jboss-minimal.xml  log4j.xml         standardjbosscmp-jdbc.xml
+jbossmq-state.xml  login-config.xml  standardjboss.xml
+jboss-service.xml  server.policy
+$ ls default/conf
+jboss-minimal.xml  log4j.xml         standardjbosscmp-jdbc.xml
+jbossmq-state.xml  login-config.xml  standardjboss.xml
+jboss-service.xml  server.policy
+jndi.properties    standardjaws.xml
+$ ls minimal/conf
+jboss-service.xml  jndi.properties  log4j.xml

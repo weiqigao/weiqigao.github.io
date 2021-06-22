@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>St. Louis Java Group, Meetings, Schedules, Programming, Code</title>
+	<link rel="stylesheet" type="text/css" href="../../java.css">
+</head>
+
+<body bottommargin="0" marginheight="0" topmargin="0" leftmargin="0" marginwidth="0">
+
+<table width="100%" bgcolor="#e1e0d5" cellspacing="4" cellpadding="2" border="0">
+<tr>
+    <td class="bodytitle_java"><img src="images/spacer.gif" alt="" width="10" height="1" border="0">May, 2000</td>
+</tr>
+<tr bgcolor="#ffffff">
+    <td><img src="images/spacer.gif" alt="" width="1" height="2" border="0"></td>
+</tr>
+</table>
+<!--Page header ends------>
+<script language=JavaScript" src="includes/beforecontentspacer.js" type="text/javascript"></script>
+<table width="750" cellspacing="2" cellpadding="2" border="0">
+<tr>
+    <td width="5"><img src="images/spacer.gif" alt="" width="1" height="2" border="0"></td>
+    <td height="400" valign="top">
+<!---------Place content below this line---------------------------------------->
+<table widt="750" cellpadding="2" cellspacing="2" border="0" class="body">
+<tr>
+<td>
+ <!------------------------- PRESENTATION -->
+<center>
+<h3>
+<font color="#000000">MerlinWeb: A Servlet Based Rapid Website Development
+Framework</font></h3></center>
+
+<center><i><font color="#000000"><font size=-1>Naeem Bari</font></font></i>
+<br><i><font color="#000000"><font size=-1>Manager, Grant Thornton LLP</font></font></i>
+<br><i><font color="#000000"><font size=-1>nbari@gt.com</font></font></i></center>
+
+<hr WIDTH="100%">
+<p>MerlinWeb is a Java Servlet based framework whose primary function is
+to facilitate the rapid development of functionally rich websites. This
+is a custom application, developed for a certain environment, but it wouldn't
+be very hard at all to make it completely generic. The goal of this talk
+is to make the audience aware of what a framework <i>is</i> and what services
+it should provide.
+<br>&nbsp;
+<h4>
+<font color="#000000">Background</font></h4>
+Meridian Enterprises is an Incentives organization. It manages incentive
+programs for its clients. For example, a client might want to motivate
+its salesforce to sell more units of a new product. So Meridian will put
+together a program, in which, for example, salespeople would be required
+to report a sale to Meridian, which would award them "points" for each
+sale. After a salesperson had earned enough points he/she may redeem them
+for say, a cash check, or a gift certificate, or they might choose a product
+out of Meridian's online mall (which was also built using the framework,
+BTW). Literally several dozen parameters can be configured to make a program,
+each tailored for a specific purpose. To facilitate this core business
+function, Meridian contracted with Grant Thornton to build a modern n-tier
+system. This project was completed over a period of one year and has been
+in operation for a year. This system, called Merlin, is an in-house system,
+used by Meridian's own employees. The need arose to develop websites for
+certain programs, which would expose certain Merlin functionality over
+the web. For example, salespeople can enter product sale claims over the
+web, or they can redeem their earned points at the online mall. So, an
+increasing number of websites would be required, each site exposing a subset
+of Merlin functionality. The task was made more difficult due to the fact
+that all sites were different enough that they couldn't be simply copied
+and changed. A framework was needed.
+<p>The rest of the talk is divided into the following topics:
+<ul>
+<li>
+<font color="#000000">What is a framework?</font></li>
+
+<li>
+<font color="#000000">What specific tasks should a website framework perform?</font></li>
+
+<li>
+<font color="#000000">MerlinWeb Core Classes</font></li>
+
+<li>
+<font color="#000000">MerlinWeb Fundamentals</font></li>
+</ul>
+
+<h4>
+<font color="#000000">What is a Framework?</font></h4>
+A Framework is a collection of objects that abstract out the common functions
+of any large project into powerful core components. Subsequently, larger
+components of the project can be built by assembling the core compenents
+in different ways. Consider the following analogy. Volkswagen needs to
+build several different types of cars, a sedan, a station wagon and a van.
+It could have each type of vehicle built from the ground up, customized
+to fulfill its particular role. While this strategy would work, it would
+result in a lot of time spent in development, and would cost more. Instead,
+what they did was institute "platform-sharing". They came up with one platform
+- one chassis, one set of wheels, brakes, engines etc. They then applied
+different presentations to this platform (a different look and feel, if
+you will), to obtain entirely different types of vehicles. This is exactly
+what a framework achieves.
+<br>&nbsp;
+<h4>
+<font color="#000000">What specific tasks should a website framework perform
+(What are the common parts of websites) ?</font></h4>
+Any self-respecting framework should do the following:
+<ul>
+<li>
+<font color="#000000">Authentication</font></li>
+
+<li>
+<font color="#000000">Session Management</font></li>
+
+<li>
+<font color="#000000">Separation of content from presentation</font></li>
+</ul>
+Some of the more exotic tasks that a framework could perform are
+<ul>
+<li>
+<font color="#000000">Access control based on user level</font></li>
+
+<li>
+<font color="#000000">"Skinnable" views of data</font></li>
+
+<li>
+<font color="#000000">Embedding of remote data sources in pages (page content
+comes from some remote URL)</font></li>
+</ul>
+MerlinWeb does all of the above tasks and more.
+<br>&nbsp;
+<h4>
+<font color="#000000">MerlinWeb Core Classes</font></h4>
+MerlinWeb is built on top of Apache and JServ. JServ is a servlet execution
+engine built by the Apache group. Both Apache Webserver and Apache JServ
+are open source packages. MerlinWeb can run within any servlet enabled
+webserver.
+<p>MerlinWeb is actually a set of objects. Whenever we write a servlet
+in MerlinWeb, we extend one of these special objects instead of implementing
+the HttpServlet interface, as normal servlets do. The base object in this
+framework is called the <b><i>SessionKeeper</i></b>. This object implements
+the HttpServlet interface and provides utility functions for dealing with
+sessions. Another thing that differentiates MerlinWeb servlets from normal
+servlets is the use of a special entity class that contains a user's session
+variables. This object, called <b><i>ClientSessionInfo</i></b> is dealt
+with by the SessionKeeper. When a user logs in to a MW site, SessionKeeper
+initializes a new ClientSessionInfo, populates it with a lot of information
+about the user, and stores it in the user's session. The reason for handling
+session information this way were manifold. All subsequent servlets can
+gain access to this object via SessionKeeper and modify it and query it,
+and don't have to deal with the Session interface. This allows MW to be
+fairly independent of the actual sessioning scheme implemented by its environment.
+We can foresee a situation in which an update to Sun's Java Servlet Development
+Kit (JSDK) changes the way in which session information is retrieved and
+updated. In MW, we would only have to update the SessionKeeper to reflect
+the new way. All servlets would remain unaware of any changes, and would
+not need to be updated. Another big reason to keep session information
+in a special object is that it allows servlets to pass session info to
+non-servlet objects, which might do certain domain specific work for the
+servlets.
+<p>On top of these core classes, we identified two distinct design patterns
+for servlets that would be built using this framework. The first kind of
+servlet would an <b><i>entry</i></b> servlet. This servlet would be the
+point of entry into a MW site for a user. This servlet would be responsible
+for authenticating a user and performing other administrative chores. So
+we implemented a class called <b><i>Base </i></b>to implement this design.
+<br>A second kind of servlet design would be a normal servlet that would
+perform some chore for a MW site, like enrolling a new user, entering in
+a new claim, generating a report - basically these servlets would hook
+into the back-end system a lot of the time. We developed the <b><i>BaseComp
+</i></b>class
+to encapsulate this functionality. Also, normal servlets would also allow
+<i>servlet
+chaining</i>, which means that the output of one servlet can be fed into
+the input of another servlet. <i>Servlet chaining</i> is supported by some
+servlet engines and not by others. Whether it should be supported or not
+is a bit of a holy war among servlet developers. JServ does not support
+it. However, we did have a need for it, so implemented our own form of
+servlet chaining code which resides in the BaseComp class. This makes our
+framework impervious to whether the servlet engine it is running in supports
+chaining or not.
+<p>&nbsp;<a href="mwarch.jpg">This</a> is a diagram depicting MerlinWeb's
+architecture.
+<br>&nbsp;
+<h4>
+<font color="#000000">MerlinWeb Fundamentals</font></h4>
+<b><font color="#000000">Authentication</font></b> is performed via standard
+username/password pairs. When a user visits the login page, he/she inputs
+a username/password which is POSTED to an <b><i>entry </i></b>servlet.
+This servlet uses a non-servlet object to actually perform the authentication.
+This object connects to the backend system, passes the parameters to a
+method, and receives, in addition to whether the user is valid or not,
+a whole list of variables that <i>define</i> a user in a MW site. This
+information consists of such things as first name, last name, user level
+as well as other information such as a <i>fragment access list</i> (which
+will be covered in the next section) in addition to a plethora of ids that
+will make the lives of subsequent servlets much easier. All this information
+is put into a ClientSessionInfo object and this object is stuffed into
+the user's session for later access by other servlets.
+<p><b><font color="#000000">Access Control</font></b> in MerlinWeb means
+controlling what a specific user can and cannot see of a website. A user
+who is a mere salesrep may not be allowed to see all the things that a
+VIP can see, for instance. The way in which MW accomplishes access control
+is by breaking up the HTML for a site into <i>named fragments</i>. Each
+web page in a site is then composed of references to these fragments. Whenever
+a page is shown to the user, a utility class is invoked by the servlet
+which looks up the list of fragments that compose that page in the <i>access
+list </i>that was obtained when the user logged in. All fragments that
+are allowed to this user are then put together and sent back as a web page.
+Note an important sidebar of this way of doing access control. No pages
+of a site can be viewed directly from a webserver. All page views are processed
+by our paging engine and put together in real time. This way of implementing
+access control is slightly costly in terms of CPU utilization, but it allows
+us phenomenal power and flexibility over what we allow different levels
+of users to see. It also means that no user can see any page of a site
+unless he/she is logged in. A website can look and feel totally different
+for a salesrep and a VIP. We have reduced access control to be completely
+data-driven. And the beautiful part is, this functionality is built-in
+in all sites developed in MW. There is no need for any coding to achieve
+this for any site. This factor alone saves us a lot of time and effort
+when developing new sites.
+<p>&nbsp;<a href="home.txt">This</a> is what a web page looks like in MW
+<br>&nbsp;<a href="fragDefs.txt">This</a> is how the fragments are defined
+<br>&nbsp;
+<p><b><font color="#000000">Content/Presentation Separation</font></b>.
+We implemented this concept in MW by coming up with our own tags that we
+embed in the HTML fragments of a page. This forms the basis of our templating
+engine. Some people might ask, why did we reinvent the wheel? Why did we
+not use JSP? The answer to that question is: JSP is bad :) Why, you might
+ask. There has been a war going on in the last few weeks over whether JSPs
+are good or bad. Please refer to www.servlets.com and read Jason Hunter's
+article in this regard. He outlines the same reasons due to which we decided
+to skip JSP many months ago, even though it was the media darling. The
+bottom line is that it is overly complex for something as simple as embedding
+dynamic content in a web page. In MW, we already have the advantage of
+the fact that each page that is sent to the browser is parsed beforehand
+in order to determine which of its constituent fragments can be shown.
+An additional step that is performed while processing the fragments is
+a check to see if it is a special kind of fragment. This special fragment
+is in the form of a URL that refers to a servlet, passing it any relevent
+parameters. Upon seeing such a fragment, the paging engine invokes a utility
+class that calls the specified servlet, accepts its output, and replaces
+the fragment with the recieved HTML. What this means is that the web page's
+HTML can be written by a page designer, and wherever he needs to include
+the output of a servlet in the page, he can simply place a special tag
+in the HTML that accomplishes this for him. On the other side, the servlet
+can be developed by a Java developer without any knowledge of HTML, and
+without any care of where the output of his servlet will be embedded. This
+is great, you say, but how come the servlet writer doesn't need to know
+HTML? Doesn't the servlet need to output HTML? This takes us to the second
+part of our templating engine - HTML templates.
+<p>What we did in MW was to come up with a very sophisticated mechanism
+to combine rows of data elements with HTML templates. We take a data source,
+say, for example, a JDBC resultset and we take a template file, and we
+combine them in such a way as to generate an HTML page. The template contains
+references to the data elements being fed to it. The engine replaces all
+occurances of a data element reference with its value in the data source.
+The best way to explain this process is to illustrate it...
+<p>&nbsp;<a href="amcircClaimView.html">This</a> is what a HTML template
+file looks like
+<p>Another point to note is that a servlet can accept the name of the template
+file to use at run time, i.e, it can be part of the request. What this
+means is that the same dataset can be viewed in totally different ways
+depending on which HTML template you combine it with - in essence the servlet
+can switch its "skin" as needed. One skin may allow the only the display
+of the data, another skin may display the data in a form which can be updated.
+And all this is accomplished with the servlet writer not needing to even
+know HTML. All he has to do is get the request, process the request, get
+the data required, and call the appropriate class that does the templating.
+Again, this templating is available to all sites by default. Absolutely
+no coding is required to harness this power. Another point of interest
+is that the data source can be varied. Our template engine can combine
+a HTML template with a JDBC ResultSet, a specially constructed 2 dimensional
+Vector, or a combination of the two.
+<p><b><font color="#000000">Embedding Remote HTML</font></b>. This is in
+essence a corollary to what we covered in the first part of our templating
+engine. What it means is the the URL of the special tag can be any valid
+URL. That URL will be opened, its HTML obtained, and made part of the page
+being shown.
+<p>From the above description it is easy to see that it is a simple matter
+to develop a new site in MW. All that is needed is for a developer to write
+one or more servlets that interface with the backend system and for a HTML
+person to come up with the web pages and the templates required to present
+the functionality exposed by the servlets. The only other task is to set
+up fragment access correctly in the database and the site is finished.
+The benefit we have derived from having this framework is that we can now
+put together sites in about a week or two, whereas without this framework
+each site would have easily taken two months or more to do.
+<br>&nbsp;
+<h4>
+<font color="#000000">Other Frameworks</font></h4>
+<font color="#000000">There are several servlet based frameworks and templating
+engines currently available, many of them for free. Some of the most well
+known ones are:</font>
+<ul>
+<li>
+<a href="http://java.apache.org">Apache Turbine</a> - A JServ based framework.</li>
+
+<li>
+<a href="http://webmacro.org">WebMacro</a> - A templating engine</li>
+</ul>
+It is important to note that the above products complement each other.
+In fact, put them together, and you get MerlinWeb's functionality. Unfortunately
+these tools did not exist when we developed our engine, otherwise we might
+have used these tools rather than building our own.
+<br>&nbsp;
+<p><br>
+<center>
+<p><font color="#000000">***FIN***</font></center>
+<hr>
+      <!------------------------- Presentation -->
+<br>
+Send comments to <A href="mailto:javasig@ociweb.com">javasig@ociweb.com</A>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

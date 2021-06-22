@@ -1,0 +1,50 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Using JDBC with Servlets</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>Using JDBC with Servlets</H1> 
+ <P><UL>
+<LI><H2>Create a subclass of HttpServlet
+</H2>
+<UL>
+<LI>override the init() method
+<UL>
+<LI>load the JDBC device driver
+<UL>
+<LI>allows you to connect to a vendor’s database
+<LI>if this fails, throw an UnavailableException
+<UL>
+<LI>indicates to the web server that the Servlet cannot be started
+<LI>the Servlet should also write an entry to the log file
+</UL><LI>optionally create a Connection to the database
+<UL>
+<LI>this could be done in the init method, or later in doGet or doPost
+</UL><LI>override doGet(), doPost(), or another method
+<UL>
+<LI>create a JDBC Statement() object, which allows you to pass SQL to the database
+<LI>format HTML results and return to the client
+<LI>always use try/catch/finally to clean up after errors
+<UL>
+<LI>a failed Servlet should not leave an open database connection</UL></UL></UL></UL></UL></UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld037.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld039.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld038.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

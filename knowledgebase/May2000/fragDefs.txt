@@ -1,0 +1,194 @@
+<!-- S Frag #templ1# -->
+<html>
+<head>
+  <title> American Circuits Star Rewards </title>
+</head>
+
+<body bgcolor="white" background="/images/back-2.png" link="white" vlink="white" alink="white">
+<center>
+
+<table border="0" width="552" cellspacing="0" cellpadding="1">
+  <tr>
+<!-- S Frag #templHomeLogo# -->
+    <td colspan="2" align="left" valign="bottom"><img src="/images/layout/home.jpg" width="552"></td>
+<!-- S Frag #templRulesLogo# -->
+    <td colspan="2" align="left" valign="bottom"><img src="/images/layout/rules.jpg" width="552"></td>
+<!-- S Frag #templEnrollLogo# -->
+    <td colspan="2" align="left" valign="bottom"><img src="/images/layout/enroll.jpg" width="552"></td>
+<!-- S Frag #templProfileLogo# -->
+    <td colspan="2" align="left" valign="bottom"><img src="/images/layout/profile.jpg" width="552"></td>
+<!-- S Frag #templClaimLogo# -->
+    <td colspan="2" align="left" valign="bottom"><img src="/images/layout/claim.jpg" width="552"></td>
+<!-- S Frag #templRedeemLogo# -->
+    <td colspan="2" align="left" valign="bottom"><img src="/images/layout/redeem.jpg" width="552"></td>
+<!-- S Frag #templReportsLogo# -->
+    <td colspan="2" align="left" valign="bottom"><img src="/images/layout/reports.jpg" width="552"></td>
+<!-- S Frag #templContactLogo# -->
+    <td colspan="2" align="left" valign="bottom"><img src="/images/layout/contact.jpg" width="552"></td>
+<!-- S Frag #templ2# -->
+  </tr>
+
+  <tr>
+    <!-- primary navigation -->
+    <td align="left" width="100" bgcolor="#000088">&nbsp;</td>
+    <td align="center" valign="bottom" width="500" bgcolor="#000088">
+      <font color="white" size="2">
+      <a href="/merlin/amcirc?command=showpage&page=page_home">Home</a> |
+      <a href="/merlin/amcirc?command=showpage&page=page_rules">Rules</a> |
+<!-- S Frag #templEnrollNav# -->
+      <a href="/merlin/amcirc?command=showpage&page=page_enroll">Enroll</a> |
+<!-- S Frag #templProfileNav# -->
+      <a href="/merlin/amcirc?command=showpage&page=page_profile">Profile</a> |
+<!-- S Frag #templClaimNav# -->
+      <a href="/merlin/amcirc?command=showpage&page=page_claim">Claim</a> |
+<!-- S Frag #templRedeemNav# -->
+      <a href="/merlin/amcirc?command=showpage&page=page_redeem">Redeem</a> |
+<!-- S Frag #templReportsNav# -->
+      <a href="/merlin/amcirc?command=showpage&page=page_reports">Reports</a> |
+<!-- S Frag #templ3# -->
+      <a href="/merlin/amcirc?command=showpage&page=page_contact">Contact Info</a> |
+      <a href="/merlin/amcirc?command=logout">Logout</a>
+      </font>
+    </td>
+  </tr>
+
+  <tr>
+    <!-- Secondary Navigation -->
+    <td align="left" valign="top" bgcolor="#000088">
+    <table border="0" cellborder="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+    </tr>
+
+<!-- S Frag #templPersonalNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff"><a href="/merlin/amcirc?command=showpage&page=page_profile">
+        <font size="2">Personal</font></a></td>
+    </tr>
+
+<!-- S Frag #templAddressNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff"><a href="/merlin/amcirc?command=showpage&page=page_address">
+        <font size="2">Address</font></a></td>
+    </tr>
+
+<!-- S Frag #templPhoneNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff"><a href="/merlin/amcirc?command=showpage&page=page_phone">
+        <font size="2">Phone</font></a></td>
+    </tr>
+
+<!-- S Frag #templPasswdNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff"><a href="/merlin/amcirc?command=showpage&page=page_password">
+        <font size="2">Password</font></a></td>
+    </tr>
+
+<!-- S Frag #templSubmitClaimNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff" nowrap><a href="/merlin/amcirc?command=showpage&page=page_submit_claim">
+        <font size="2">Submit Claim</font></a></td>
+    </tr>
+
+<!-- S Frag #templViewClaimsNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff" nowrap><a href="/merlin/amcirc?command=showpage&page=page_view_claim">
+        <font size="2">View Claims</font></a></td>
+    </tr>
+
+<!-- S Frag #templEnrReportNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+<!--      <td align="right" valign="top" bgcolor="#4444ff"><a href="/merlin/amcirc?command=showpage&page=page_reports_1"> -->
+      <td align="right" valign="top" bgcolor="#4444ff"><a href="/merlin/amcircreports?command1=drilldown&style=amcircReportsDrilldown_full">
+        <font size="2">Drilldown</font></a></td>
+    </tr>
+
+<!-- S Frag #templEarnReportNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff" nowrap><a href="/merlin/amcirc?command=showpage&page=page_reports_2">
+        <font size="2">Current Level</font></a></td>
+    </tr>
+
+<!-- S Frag #templRedeemReportNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff"><a href="/merlin/claim?command=get">
+        <font size="2">Redemption</font></a></td>
+    </tr>
+
+<!-- S Frag #templPerfStmtNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff" nowrap><a href="/merlin/amcirc?command=showpage&page=page_rep_progress">
+        <font size="2">Your Progress</font></a></td>
+    </tr>
+
+<!-- S Frag #templRYNav# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" valign="top" bgcolor="#4444ff"><a href="/merlin/cartlogin">
+        <font size="2">Shop!</font></a></td>
+    </tr>
+
+<!-- S Frag #templ4# -->
+    <tr>
+      <td align="left" height="20">&nbsp;</td>
+      <td align="right" height="20" valign="top" bgcolor="#4444ff" nowrap><a href="mailto:hq@meridinet.com">
+        <font size="2">Email Us</font></a></td>
+    </tr>
+
+    <tr><td colspan="2">&nbsp;</td></tr>
+
+    </table>
+    </td>
+
+    <!-- Page Content -->
+    <td rowspan="2" valign="top">
+      &nbsp;<br>
+
+<!-- S Frag #templ5# -->
+    </td>
+  </tr>
+
+  <tr>
+    <td bgcolor="#4444ff" width="100" align="center" valign="center">
+      <font color="white">
+<!-- S Frag #templAddInfo# -->
+      Look in your mailbox this month to see if you won our Trip for Two!
+<!-- S Frag #templ6# -->
+      </font>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center" valign="top" bgcolor="#000088"><font size="1">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <!-- Foot Note below Seconday Nav -->
+    <td align="center" valign="center">
+      <font size="1">&#169 Meridian 2000</font>
+    </td>
+
+    <!-- Foot Note below content -->
+    <td align="center" valign="center">
+      <font size="1">
+        Click <a href="/website-guidelines.html"> here </a> to see Website
+        Guidelines
+      </font>
+    </td>
+  </tr>
+</table>
+
+</center>
+</body>
+
+</html>

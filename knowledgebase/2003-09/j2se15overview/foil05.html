@@ -1,0 +1,15 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Static Imports</title><link type="text/css" rel="stylesheet" href="browser/slides.css"><link rel="contents" href="toc.html" title="J2SE 1.5 Overview"><link rel="top" href="index.html" title="J2SE 1.5 Overview"><link rel="up" href="foilgrp03.html" title="Static Imports"><link rel="previous" href="foilgrp03.html" title="Static Imports"><link rel="next" href="foil06.html" title="Static Imports (Cont'd)"><script language="JavaScript1.2" type="text/javascript"> </script><script type="text/javascript" language="JavaScript1.2" src="browser/ua.js"> </script><script type="text/javascript" language="JavaScript" src="browser/xbDOM.js"> </script><script type="text/javascript" language="JavaScript1.2" src="browser/xbStyle.js"> </script><script type="text/javascript" language="JavaScript1.2" src="browser/xbCollapsibleLists.js"> </script><script type="text/javascript" language="JavaScript" src="browser/slides.js"> </script></head><body class="foil" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF" onkeypress="navigate(event)"><div class="foil"><a name="d0e112"></a><div class="navhead"><table width="100%" border="0" cellpadding="0" cellspacing="0" summary="Navigation"><tr><td align="left" width="10%"><a href="foilgrp03.html"><img alt="Prev" border="0" src="graphics/active/nav-prev.png"></a></td><td align="center" width="80%"><span class="navheader">J2SE 1.5 Overview</span></td><td align="right" width="10%"><a href="foil06.html"><img alt="Next" border="0" src="graphics/active/nav-next.png"></a></td></tr></table><hr class="top-nav-sep"></div><div class="foil-body"><h1 class="title">Static Imports</h1><div class="itemizedlist"><ul type="disc"><li><p>Static members in other classes are usually prefixed with a class name</p><pre class="programlisting">double valueOfPI = Math.PI;</pre></li><li><p>Static imports remove the need for the class prefix</p><pre class="programlisting">import static java.lang.Math.*;
+
+public class Test {
+    public static void main(String[] args) {
+        
+        // PI is a static field in the Math class
+        System.out.println("PI = " + PI);
+
+        // max(int, int) is a static method in the Math class
+        int max = max(args.length, 3);
+        System.out.println("max = " + max);
+    }
+}</pre></li></ul></div></div><div id="overlayDiv" style="padding-top: 2in;"><div class="navfoot"><hr class="bottom-nav-sep"><table width="100%" border="0" cellpadding="0" cellspacing="0" summary="Navigation"><tr><td align="left" width="80%" valign="top"><span class="navfooter"><span class="copyright">Copyright &copy; 2003 Jeff Brown</span></span></td><td align="right" width="20%" valign="top"><span class="index">8</span>&nbsp;</td></tr></table></div></div></div></body></html>

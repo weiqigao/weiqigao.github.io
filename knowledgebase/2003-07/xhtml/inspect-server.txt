@@ -1,0 +1,9 @@
+$ cd /opt/jboss-3.2.1_tomcat-4.1.24/server
+$ ls
+all  default  minimal
+$ ls all
+conf  data  deploy  farm  lib  log  tmp
+$ ls default
+conf  deploy  lib
+$ ls minimal
+conf  deploy  lib

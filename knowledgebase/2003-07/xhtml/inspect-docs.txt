@@ -1,0 +1,24 @@
+$ cd /opt/jboss-3.2.1_tomcat-4.1.24/docs
+$ ls
+dtd  examples  tests
+$ ls dtd
+application_1_2.dtd  jboss_2_4.dtd          jboss-web_3_0.dtd
+application_1_3.dtd  jboss_3_0.dtd          jboss-web_3_2.dtd
+connector_1_0.dtd    jboss_3_2.dtd          jboss-web.dtd
+ejb-jar_2_0.dtd      jboss-app_3_0.dtd      jboss_xmbean_1_0.dtd
+ejb-jar.dtd          jboss-app_3_2.dtd      security_config.dtd
+html-svg             jbosscmp-jdbc_3_0.dtd  web-app_2_2.dtd
+jaws_2_4.dtd         jbosscmp-jdbc_3_2.dtd  web-app_2_3.dtd
+jaws_3_0.dtd         jboss.dtd
+jaws.dtd             jboss-service_3_2.dtd
+$ ls examples
+jca  netboot
+$ ls examples/jca
+asapxcess-jb3.2-ds.xml  jdatastore-ds.xml         oracle-xa-ds.xml
+db2-ds.xml              jms-ds.xml                postgres-ds.xml
+facets-ds.xml           lido-versant-service.xml  sapdb-ds.xml
+firebird-ds.xml         msaccess-ds.xml           sapr3-ds.xml
+generic-ds.xml          mssql-ds.xml              solid-ds.xml
+hsqldb-ds.xml           mssql-xa-ds.xml           sybase-ds.xml
+informix-ds.xml         mysql-ds.xml
+informix-xa-ds.xml      oracle-ds.xml

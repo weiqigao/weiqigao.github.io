@@ -1,0 +1,161 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Design patterns </TITLE>
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Office\html.dot">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<P>&nbsp;</P>
+<P>&nbsp; </P>
+<B><P>Design patterns ?</P>
+</B><P>" A Pattern is an idea that has been useful in one practical context and will probably be useful in others" - Martin Fowler </P>
+<P>" A Pattern is a best practice solution to a common recurring problem " - Floyd Marinescu </P>
+<P>&nbsp;</P>
+<B><P>Bad Practices</B> :</P>
+<P>&nbsp;</P>
+<B><P>Popular J2EE Patterns </B>:</P>
+
+<UL>
+<LI>Front Controller </LI>
+<LI>Session Fa&ccedil;ade </LI>
+<LI>Message Facade </LI>
+<LI>Business Delegate</LI>
+<LI>Data Access Object </LI>
+<LI>Value Object </LI>
+<LI>Intercepting Filter </LI>
+<LI>Service Locator </LI>
+<LI>Primary key generation strategies</LI></UL>
+
+<P>&nbsp;</P>
+<B><P>Front Controller</B>:</P>
+
+<UL>
+<LI>A front controller is that point in your system which gets all the client requests . </LI>
+<LI>The front controller will look at the request and forward it on to the right handler or jsp . </LI>
+<LI>Good place to have the licensing and security code . </LI>
+<LI>It can be either a jsp or servlet. Preferably a servlet .</LI></UL>
+
+<P>&nbsp; <A HREF="publish/cat39c9260c00d5/cat3bc5aa450030/dgm3bd9bf8e00df.htm">Controller sequence</A> </P>
+<P>Advantages of using a Front Controller:</P>
+<P>&nbsp;</P>
+
+<UL>
+<LI>Promotes reuse of common code that is needed for all requests . </LI>
+<LI>Promotes flexibility </LI>
+<LI>Easier to maintain .</LI></UL>
+
+<P>&nbsp;Things to watch for :</P>
+
+<UL>
+<LI>Avoid fat controllers . Do not restrict site to one controller. Different subsystems could have their own controllers.</LI></UL>
+
+<P>&nbsp; </P>
+<B><P>Session Fa&ccedil;ade </B>:</P>
+
+<UL>
+<LI>A fa&ccedil;ade is usually provided to hide the underlying complexity from the client. </LI>
+<LI>A session bean is used as a session fa&ccedil;ade to perform coarse grained functionality . </LI>
+<LI>The session bean will probably interact with two or more entity beans .</LI>
+<LI>A session fa&ccedil;ade combined with a Data Access Object can be used for read only data.</LI></UL>
+
+<P>Advantages of using a session fa&ccedil;ade:</P>
+
+<UL>
+<LI>Improved transaction control </LI>
+<LI>Improves performance by reducing the number of fine grained method calls from the client.</LI></UL>
+
+<P>&nbsp;<A HREF="publish/cat39c9260c00d5/cat3bc5aa450030/dgm3be1f8ae0113.htm">Session Fa&ccedil;ade sequence diagram</A></P>
+<B><P>Message Fa&ccedil;ade</B> :</P>
+<P>Use a message driven bean ( MDB ) for asynchronous communication . The client can submit a message on a Java Message Service ( JMS ) Queue or a Topic . The MDB is configured to listen for any messages . When a message is received , the MDB will pick it up and process the message .</P>
+
+<UL>
+<LI>Asynchronous communication - The client can send the message on the JMS destination and is free to continue processing </LI>
+<LI>Guaranteed delivery of message - If some part of the system is down the JMS destination can be configured so that all the messages are persistant . </LI>
+<LI>MDB's do not have return values </LI>
+<LI>MDB's do not propagate exceptions back to the clients . Usually an e-mail is generated to inform the client of success or failure of the use-case .</LI></UL>
+
+<P>&nbsp;<A HREF="patterns/cat3d4d638e003d/dgm3d4d6984009c.htm">Message Fa&ccedil;ade Sequence</A> </P>
+<P>&nbsp;</P>
+<B><P>Business Delegate</B> :</P>
+<P>Plain java classes that hide EJB API complexity by encapsulating code required to discover, delegate to and recover from invocations on the session and message fa&ccedil;ade EJB layers.</P>
+
+<UL>
+<LI>Use on large projects where the web team is separate from the EJB team .</LI></UL>
+
+<B><P>Data Access Object</B> :</P>
+
+<UL>
+<LI>Use a Data Access Object ( DAO ) to abstract all access to a data source. </LI>
+<LI>The DAO will help to hide details of access to the data source from the client. </LI>
+<LI>Promotes easier migration from one data source to another .</LI></UL>
+
+<P>&nbsp;<A HREF="patterns/cat3d4d638e003d/dgm3d4d66fd02ea.htm">Data Access Object Sequence</A> </P>
+<B><P>Value Object </B>:</P>
+<P>A value object is object that encapsulates all the data required by a client . The client can then call get methods on the value object to get all the data needed by the client . When a client requests an Entity or a Session bean for business data , the bean should construct a value object and return it to the client . </P>
+<P>&nbsp;<A HREF="patterns/cat3d4d638e003d/dgm3d4d66fd02ea.htm">Value Object Sequence </A></P>
+<B><P>Intercepting Filter</B> :</P>
+<P>Create Pluggable filters to process common services in a standard manner , without requiring changes to the core request .</P>
+
+<UL>
+<LI>Introduced in Servlet specification 2.3 </LI>
+<LI>Filters allow on the fly transformations of payload and header of both the request into a resource and the response from a resource. </LI>
+<LI>Filters do not generally create a response or respond to a request as servlets do , rather they are used to modify ther request or the response. </LI>
+<LI>Related to the decorator ( GOF ) pattern </LI>
+<LI>Front controller provides similar functionality , but is better suited to handling core processing. </LI>
+<LI>Examples of filter use - authentication filters , logging &amp; auditing , Image conversion , data compression , encryption …</LI></UL>
+
+<P>&nbsp;How to write a filter:</P>
+
+<UL>
+<LI>Implement the javax.servlet.Filter interface </LI>
+<LI>Container will call the doFilter() method. The doFilter method will modify the request or response and then call the next filter in the filter chain. </LI></UL>
+
+<P>Configuring a filter in the deployment descriptor ( web.xml ) :</P>
+<P>&lt;filter&gt; </P>
+<P>&lt;filter-name&gt;Image Filter&lt;/filter-name&gt; </P>
+<P>&lt;filter-class&gt;com.acme.ImageFilter&lt;/filter-class&gt; </P>
+<P>&lt;/filter&gt; </P>
+<P>&lt;filter-mapping&gt; </P>
+<P>&lt;filter-name&gt;Image Filter&lt;/filter-name&gt; </P>
+<P>&lt;url-pattern&gt;/*&lt;/url-pattern&gt; </P>
+<P>&lt;/filter-mapping&gt;</P>
+<P>&nbsp;</P>
+<B><P>Service Locator</B> :</P>
+<P>Used to reuse code performing the JNDI lookup . </P>
+
+<UL>
+<LI>Abstracts complexity </LI>
+<LI>Provides uniform service access to Clients </LI>
+<LI>Improves performance </LI>
+<LI>Sometimes referred to as the EJBHomeFactory ( EJB design patterns ) .</LI></UL>
+
+<P>&nbsp;</P>
+<P><A HREF="patterns/cat3d4d638e003d/dgm3d4d63a203df.htm">Service Locator sequence</A> </P>
+<P>&nbsp;</P>
+<B><P>Primary Key Generation strategies</P>
+</B><P>How can we generate primary keys for entity beans ?</P>
+
+<UL>
+<LI>Sequence Blocks - Uses a stateless session bean and a CMP entity bean .</LI></UL>
+<DIR>
+<DIR>
+
+<P>The CMP entity bean represents a sequence in the database. A session fa&ccedil;ade will front the sequence entity bean .It will get blocks of integers at a time and cache them locally.</P></DIR>
+</DIR>
+
+
+<UL>
+<LI>UUID for EJB  - Create primary keys in memory by creating a universally unique identifier (UUID ) that combines enough system information to make it unique .</LI></UL>
+
+
+<UL>
+<LI>Stored Procedures for Autogenerated keys - Stored procedures are used to insert the data and return the generated key . The stored procedure is called from the ejbCreate() method.</LI></UL>
+
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P></BODY>
+</HTML>

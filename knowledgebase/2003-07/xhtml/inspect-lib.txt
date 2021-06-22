@@ -1,0 +1,6 @@
+$ cd /opt/jboss-3.2.1_tomcat-4.1.24/lib
+$ ls
+commons-httpclient.jar  jboss-boot.jar    jdom.jar        xml-apis.jar
+concurrent.jar          jboss-common.jar  log4j-boot.jar
+getopt.jar              jboss-jmx.jar     webdavlib.jar
+gnu-regexp.jar          jboss-system.jar  xercesImpl.jar

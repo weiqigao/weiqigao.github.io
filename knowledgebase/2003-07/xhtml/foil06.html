@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE head
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head xmlns="http://www.w3.org/1999/xhtml">
+   <title>A Closer Look</title>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link rel="contents" href="toc.html" title="JBoss"/>
+   <link rel="top" href="titlepg.html" title="JBoss"/>
+   <link rel="up" href="titlepg.html" title="JBoss"/>
+   <link rel="previous" href="foil05.html" title="Web Console"/>
+   <link rel="next" href="foil07.html" title="Ant, XDoclet, Etc."/>
+   <script language="JavaScript1.2" type="text/javascript"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/ua.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/xbDOM.js"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/xbStyle.js"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/xbCollapsibleLists.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/slides.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/overlay.js"> </script>
+</head>
+<body xmlns="http://www.w3.org/1999/xhtml" class="foil" onload="newPage('foil06.html',1);" onkeypress="navigate(event)">
+   <div class="foil" id="closerlook">
+      <a id="closerlook"/>
+      <div class="navhead">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="Navigation table">
+            <tr>
+               <td align="left" valign="bottom" width="10%">
+                  <span class="link-text">
+                     <a href="foil05.html">
+                        <img alt="Prev" border="0" src="graphics/active/nav-prev.png"/>
+                     </a>
+                  </span> </td>
+               <td width="80%"> </td>
+               <td align="right" valign="bottom" width="10%">
+                  <span class="link-text">
+                     <a href="foil07.html">
+                        <img alt="Next" border="0" src="graphics/active/nav-next.png"/>
+                     </a>
+                  </span> </td>
+            </tr>
+         </table>
+         <hr class="top-nav-sep"/>
+      </div>
+      <h1 class="title">A Closer Look</h1>
+      <p>
+         <a href="inspect-bin.txt" target="_top">
+            <tt>bin</tt>
+         </a> contains
+    <tt>run.sh</tt>, <tt>shutdown.sh</tt>, and
+    bootstrapping jar files.</p>
+      <p>
+         <a href="inspect-client.txt" target="_top">
+            <tt>client</tt>
+         </a> contains
+    jar files that must be specified when compiling J2EE applications.
+    Note that <tt>servlet.jar</tt> is in
+    <tt>server/default/lib</tt>.  The server does not use
+    this directory at run time.</p>
+      <p>
+         <a href="inspect-docs.txt" target="_top">
+            <tt>docs</tt>
+         </a> contains
+    DTDs for deployment descriptors as well as data source
+    configuration scripts for supported RDBMSs.</p>
+      <p> 
+         <a href="inspect-lib.txt" target="_top">
+            <tt>lib</tt>
+         </a> contains
+    jar files needed to by JBoss.  Do not put user jar files into this
+    directory.</p>
+      <p>
+         <a href="inspect-server.txt" target="_top">
+            <tt>server</tt>
+         </a> contains the "factory"
+    configuration sets.  New configuration sets can be created here,
+    starting with a copy of one of the preconfigured sets.</p>
+      <p>For each configuration set, <a href="inspect-conf.txt" target="_top">
+            <tt>conf</tt>
+         </a> contains configuration files,
+    <a href="inspect-deploy.txt" target="_top">
+            <tt>deploy</tt>
+         </a> contain deployed system
+    resources and hot-deployable user applications, and <a href="inspect-server-lib.txt" target="_top">
+            <tt>lib</tt>
+         </a> contain
+    non-hot-deployable jar files used by the configuration set.</p>
+      <p>The <tt>data</tt>, <tt>log</tt>, and
+    <tt>tmp</tt> directories are created if necessary when
+    the server is started.  The <a href="server.log" target="_top">
+            <tt>log/server.log</tt>
+         </a> file contains lots of
+    useful information.</p>
+      <div id="overlayDiv" style="position:absolute;visibility:visible;">
+         <div class="navfoot">
+            <hr class="bottom-nav-sep"/>
+            <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="Navigation table">
+               <tr>
+                  <td align="left" valign="top">
+                     <span class="copyright">Copyright © 2003 Weiqi Gao</span> </td>
+                  <td align="right" valign="top">
+                     <span class="link-text">
+                        <a href="foil05.html">
+                           <img alt="Prev" border="0" src="graphics/active/nav-prev.png"/>
+                        </a>
+                     </span> <span class="link-text">
+                        <a href="foil07.html">
+                           <img alt="Next" border="0" src="graphics/active/nav-next.png"/>
+                        </a>
+                     </span> </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </div>
+</body>

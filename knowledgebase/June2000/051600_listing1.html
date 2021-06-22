@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<script language="JavaScript">
+
+<!-- hide from JavaScript-challenged browsers
+function openWindow1() {  popupWin = window.open('/url/', 'Figure1',
+'scrollbars,resizable,width=550,height=480')
+}
+// done hiding -->
+
+</script>
+<TITLE>Listing 1</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#cccccc"
+LINK="#ffffff" VLINK="#ffffff" ALINK="#ffffff">
+<TABLE CELLSPACING="0" CELLPADDING="5" WIDTH=600 border=0>
+      <TR ALIGN=LEFT VALIGN=TOP>
+<TD ROWSPAN="2" BGCOLOR="#006294">&nbsp;</TD>
+      <TD valign=top BGCOLOR="006294" nowrap><FONT FACE="Arial"
+      SIZE="+1">Getting the correct values displayed on the Y-axis</FONT><BR>
+<FONT SIZE=2 FACE="ARIAL" color="#ffffff"><B></b></font> <BR><FONT SIZE=2
+FACE="ARIAL" color="#ffffff"><i>by Sharath Sahadevan</i></font><P></td>
+
+<td valign=top align=right bgcolor="#006294">&nbsp;</td></TR>
+<TR><TD BGCOLOR="dddddd" colspan=2><font color="000000">
+
+<pre><code>
+// Add Values to Y-AXIS
+      curr_x = x_min ;
+      for (count = ( max_close/10 ) ; count < max_close ; count= count+( max_close/ 10 )  )
+      {
+      curr_y = y_max - (( count * y_length ) / max_close ) ;
+
+      g.drawString( "__" , curr_x-5 , curr_y );
+      g.drawString(  String.valueOf( count )  , curr_x-20 , curr_y );
+
+      }
+</pre>
+
+</code></pre>
+</TD></TR>
+
+
+</TABLE>
+
+</BODY>
+</HTML>
+

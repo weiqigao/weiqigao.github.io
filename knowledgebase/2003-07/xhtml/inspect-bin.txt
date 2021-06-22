@@ -1,0 +1,5 @@
+$ cd /opt/jboss-3.2.1_tomcat-4.1.24/bin/
+$ ls
+classpath.sh  deployer.sh           run.conf  shutdown.bat  twiddle.bat
+deployer.bat  jboss_init_redhat.sh  run.jar   shutdown.jar  twiddle.jar
+deployer.jar  run.bat               run.sh    shutdown.sh   twiddle.sh

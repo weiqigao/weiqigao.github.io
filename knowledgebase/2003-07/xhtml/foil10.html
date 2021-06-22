@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE head
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head xmlns="http://www.w3.org/1999/xhtml">
+   <title>Start a Project</title>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link rel="contents" href="toc.html" title="JBoss"/>
+   <link rel="top" href="titlepg.html" title="JBoss"/>
+   <link rel="up" href="titlepg.html" title="JBoss"/>
+   <link rel="previous" href="foil09.html" title="Data Sources"/>
+   <link rel="next" href="foil11.html" title="Project Structure"/>
+   <script language="JavaScript1.2" type="text/javascript"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/ua.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/xbDOM.js"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/xbStyle.js"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/xbCollapsibleLists.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/slides.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/overlay.js"> </script>
+</head>
+<body xmlns="http://www.w3.org/1999/xhtml" class="foil" onload="newPage('foil10.html',1);" onkeypress="navigate(event)">
+   <div class="foil" id="project">
+      <a id="project"/>
+      <div class="navhead">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="Navigation table">
+            <tr>
+               <td align="left" valign="bottom" width="10%">
+                  <span class="link-text">
+                     <a href="foil09.html">
+                        <img alt="Prev" border="0" src="graphics/active/nav-prev.png"/>
+                     </a>
+                  </span> </td>
+               <td width="80%"> </td>
+               <td align="right" valign="bottom" width="10%">
+                  <span class="link-text">
+                     <a href="foil11.html">
+                        <img alt="Next" border="0" src="graphics/active/nav-next.png"/>
+                     </a>
+                  </span> </td>
+            </tr>
+         </table>
+         <hr class="top-nav-sep"/>
+      </div>
+      <h1 class="title">Start a Project</h1>
+      <p>There are
+    many starting points for a project.  From a physical point of
+    view.  The first step should be to setup the environment and a
+    build loop.</p>
+      <p>The <tt>build.xml</tt> of the hello project
+    started out like this:</p>
+      <pre class="screen">&lt;project default="junit"&gt;
+  &lt;target name="junit"&gt;
+    &lt;junit printsummary="on" fork="false"
+      haltonfailure="false"
+      showoutput="true"&gt;
+      &lt;classpath refid="cp"/&gt;
+      &lt;formatter type="brief" usefile="false"/&gt;
+      &lt;batchtest&gt;
+        &lt;fileset dir="src"
+          includes="**/Test*.java"/&gt;
+      &lt;/batchtest&gt;
+    &lt;/junit&gt;
+  &lt;/target&gt;
+&lt;/project&gt;</pre>
+      <div id="overlayDiv" style="position:absolute;visibility:visible;">
+         <div class="navfoot">
+            <hr class="bottom-nav-sep"/>
+            <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="Navigation table">
+               <tr>
+                  <td align="left" valign="top">
+                     <span class="copyright">Copyright © 2003 Weiqi Gao</span> </td>
+                  <td align="right" valign="top">
+                     <span class="link-text">
+                        <a href="foil09.html">
+                           <img alt="Prev" border="0" src="graphics/active/nav-prev.png"/>
+                        </a>
+                     </span> <span class="link-text">
+                        <a href="foil11.html">
+                           <img alt="Next" border="0" src="graphics/active/nav-next.png"/>
+                        </a>
+                     </span> </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </div>
+</body>

@@ -1,0 +1,93 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Example Applet</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>Example Applet</H1> 
+ <P><UL>
+<H2>import java.awt.*;
+</H2>
+<BR></UL><UL>
+<H2>import java.awt.event.*;
+</H2>
+</UL><UL>
+<H2>import java.io.*;
+</H2>
+</UL><UL>
+<H2>import java.net.*;
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>public class MyApplet extends java.applet.Applet implements ActionListener {
+</H2>
+</UL><UL>
+<H2>    private Button submitBtn = new Button("Submit");
+</H2>
+</UL><UL>
+<H2>    private TextField nameFld = new TextField(20);
+</H2>
+</UL><UL>
+<H2>    private TextField ageFld = new TextField(3);
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>    public void init() {
+</H2>
+</UL><UL>
+<H2>        setLayout(new GridBagLayout());
+</H2>
+</UL><UL>
+<H2>        GridBagConstraints gbc = new GridBagConstraints();
+</H2>
+</UL><UL>
+<H2>        // … GUI Layout omitted
+</H2>
+</UL><UL>
+<H2>        submitBtn.addActionListener(this);
+</H2>
+</UL><UL>
+<H2>    }
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>    public void actionPerformed(ActionEvent e) {
+</H2>
+</UL><UL>
+<H2>        if (e.getSource() == submitBtn) {
+</H2>
+</UL><UL>
+<H2>            submit();
+</H2>
+</UL><UL>
+<H2>        }
+</H2>
+</UL><UL>
+<H2>    }</H2>
+</UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld032.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld034.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld033.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

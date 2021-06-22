@@ -1,0 +1,51 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>GenericServlet.service()</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>GenericServlet.service()</H1> 
+ <P><UL>
+<LI><H2>Carries out a single request from a client
+</H2>
+<UL>
+public abstract void service(ServletRequest req, 
+<BR><BR>    SerletResponse res) throws ServletException, IOException;
+</UL></UL><UL>
+<LI><H2>ServletRequest contains parameters from the client
+</H2>
+</UL><UL>
+<LI><H2>Output is sent to the ServletResponse
+</H2>
+</UL><UL>
+<LI><H2>Servers will not call this method until init() finishes
+</H2>
+</UL><UL>
+<LI><H2>Subclasses must be thread-safe
+</H2>
+<UL>
+<LI>access to shared resources must be synchronized
+<LI>one “brute force” solution is to synchronize this entire method
+<LI>another solution is to implement the javax.servlet.SingleThreadModel interface
+<UL>
+<LI>this guarantees that no two threads will concurrently invoke service() -- different servers will implement this differently</UL></UL></UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld013.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld015.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld014.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

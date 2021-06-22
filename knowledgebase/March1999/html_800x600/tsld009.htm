@@ -1,0 +1,93 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Context-Type" CONTEXT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>HelloWorldServlet</TITLE> 
+</HEAD>
+
+<BODY  BGCOLOR="#ffffff"  TEXT="#000000"  LINK="#6600ff"  VLINK="#cc3399" >
+
+ <H1>HelloWorldServlet</H1> 
+ <P><UL>
+<H2>import java.io.*;
+</H2>
+<BR></UL><UL>
+<H2>import javax.servlet.*;
+</H2>
+</UL><UL>
+<H2>import javax.servlet.http.*;
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>public class HelloWorldServlet extends HttpServlet {
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>    public void doGet(HttpServletRequest req, HttpServletResponse resp)
+</H2>
+</UL><UL>
+<H2>    throws ServletException, IOException {
+</H2>
+</UL><UL>
+<H2>        String name = req.getParameter("name");
+</H2>
+</UL><UL>
+<H2>        if (name == null) { name = "World"; }
+</H2>
+</UL><UL>
+<H2>
+</H2>
+</UL><UL>
+<H2>        resp.setContentType("text/html");
+</H2>
+</UL><UL>
+<H2>        PrintWriter out = new PrintWriter(resp.getOutputStream());
+</H2>
+</UL><UL>
+<H2>        out.println("&#060HTML&#062");
+</H2>
+</UL><UL>
+<H2>        out.println("&#060HEAD&#062&#060TITLE&#062HelloWorld Output&#060/TITLE&#062&#060/HEAD&#062");
+</H2>
+</UL><UL>
+<H2>        out.println("&#060BODY&#062");
+</H2>
+</UL><UL>
+<H2>        out.println("&#060H1&#062Hello, " + name + "!&#060/H1&#062");
+</H2>
+</UL><UL>
+<H2>        out.println("&#060/BODY&#062");
+</H2>
+</UL><UL>
+<H2>        out.println("&#060/HTML&#062");
+</H2>
+</UL><UL>
+<H2>        out.close();
+</H2>
+</UL><UL>
+<H2>    }
+</H2>
+</UL><UL>
+<H2>}</H2>
+</UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld008.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld010.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld009.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

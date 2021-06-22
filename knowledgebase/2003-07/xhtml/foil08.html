@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE head
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head xmlns="http://www.w3.org/1999/xhtml">
+   <title>JBoss as a Service</title>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link type="text/css" rel="stylesheet" href="browser/slides.css"/>
+   <link rel="contents" href="toc.html" title="JBoss"/>
+   <link rel="top" href="titlepg.html" title="JBoss"/>
+   <link rel="up" href="titlepg.html" title="JBoss"/>
+   <link rel="previous" href="foil07.html" title="Ant, XDoclet, Etc."/>
+   <link rel="next" href="foil09.html" title="Data Sources"/>
+   <script language="JavaScript1.2" type="text/javascript"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/ua.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/xbDOM.js"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/xbStyle.js"> </script>
+   <script type="text/javascript" language="JavaScript1.2" src="browser/xbCollapsibleLists.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/slides.js"> </script>
+   <script type="text/javascript" language="JavaScript" src="browser/overlay.js"> </script>
+</head>
+<body xmlns="http://www.w3.org/1999/xhtml" class="foil" onload="newPage('foil08.html',1);" onkeypress="navigate(event)">
+   <div class="foil" id="wrapper">
+      <a id="wrapper"/>
+      <div class="navhead">
+         <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="Navigation table">
+            <tr>
+               <td align="left" valign="bottom" width="10%">
+                  <span class="link-text">
+                     <a href="foil07.html">
+                        <img alt="Prev" border="0" src="graphics/active/nav-prev.png"/>
+                     </a>
+                  </span> </td>
+               <td width="80%"> </td>
+               <td align="right" valign="bottom" width="10%">
+                  <span class="link-text">
+                     <a href="foil09.html">
+                        <img alt="Next" border="0" src="graphics/active/nav-next.png"/>
+                     </a>
+                  </span> </td>
+            </tr>
+         </table>
+         <hr class="top-nav-sep"/>
+      </div>
+      <h1 class="title">JBoss as a Service</h1>
+      <p>
+         <a href="http://wrapper.tanukisoftware.org" target="_top">The Java Service
+    Wrapper</a> can install JBoss as a Windows service or Unix
+    daemon.  Its documentation uses JBoss as an example ;).</p>
+      <p>It consists of:</p>
+      <div class="itemizedlist">
+         <ul type="disc">
+            <li>
+               <p>a native executable <tt>wrapper</tt>
+	(<tt>Wrapper.Exe</tt>)</p>
+            </li>
+            <li>
+               <p>a native shared library
+	<tt>libwrapper.so</tt>
+	(<tt>Wrapper.Dll</tt>)</p>
+            </li>
+            <li>
+               <p>a Java library <tt>wrapper.jar</tt>
+               </p>
+            </li>
+            <li>
+               <p>a few shell scripts (batch files)</p>
+            </li>
+            <li>
+               <p>and a configuration file
+	<tt>wrapper.conf</tt>
+               </p>
+            </li>
+         </ul>
+      </div>
+      <p>All of these files are copied to JBoss's
+    <tt>bin</tt> directory.  The <a href="wrapper.conf" target="_top">wrapper.conf</a> file is modified to suit
+    JBoss's needs.</p>
+      <p>On Windows, batch files are provided
+    to install and uninstall JBoss as a service.  On Red Hat Linux,
+    the shell script can be softlinked to
+    <tt>/etc/rc.d/init.d</tt> to serve as
+    init-script.</p>
+      <div id="overlayDiv" style="position:absolute;visibility:visible;">
+         <div class="navfoot">
+            <hr class="bottom-nav-sep"/>
+            <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="Navigation table">
+               <tr>
+                  <td align="left" valign="top">
+                     <span class="copyright">Copyright © 2003 Weiqi Gao</span> </td>
+                  <td align="right" valign="top">
+                     <span class="link-text">
+                        <a href="foil07.html">
+                           <img alt="Prev" border="0" src="graphics/active/nav-prev.png"/>
+                        </a>
+                     </span> <span class="link-text">
+                        <a href="foil09.html">
+                           <img alt="Next" border="0" src="graphics/active/nav-next.png"/>
+                        </a>
+                     </span> </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </div>
+</body>
